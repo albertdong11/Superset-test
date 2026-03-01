@@ -861,3 +861,381 @@ The 18-month window from now (March 2026) to mid-2027 is when this question gets
 - [Grand View Research: US Legal Services Market](https://www.grandviewresearch.com/industry-analysis/us-legal-services-market-report)
 - [Bessemer: Ten Lessons from Vertical Software Investing](https://www.bvp.com/atlas/ten-lessons-from-a-decade-of-vertical-software-investing)
 - [Implicator.ai: Legora and the 260x Question](https://www.implicator.ai/legora-and-the-260x-question/)
+
+---
+
+## Q6: Legal Spend vs. Design Spend — Sandstone as Legal SoR vs. Figma as Design SoR
+
+### The Spend Comparison at Mid-Market ($200M-$500M Revenue)
+
+| Dimension | Legal Department | Design Department |
+|-----------|-----------------|-------------------|
+| **Headcount** | 2-5 lawyers, 4-8 total staff | 30-75 designers |
+| **Fully-loaded people cost** | $500K-$2M/yr | $5M-$13M/yr |
+| **People cost as % of revenue** | 0.2%-0.5% | 1.5%-3.5% |
+| **Outside vendor spend** | $500K-$1.5M (outside counsel) | Minimal (some agencies) |
+| **Total function cost** | $1M-$3.5M/yr | $5M-$14M/yr |
+| **Current tool spend** | $50K-$150K/yr | $15K-$50K/yr (Figma) |
+| **Tool spend as % of function cost** | 2%-5% | 0.3%-0.5% |
+| **Cost per person (fully loaded)** | $200-$400K | $150-$200K |
+| **% of work that's admin/repetitive** | 40-60% (ACC data) | 15-25% |
+| **$ value of automatable work per person** | $80K-$240K | $25K-$50K |
+| **AI automation ceiling** | High (language-based, rule-governed) | Moderate (visual, creative judgment) |
+
+**Key insight:** Legal teams are much smaller but more expensive per person, spend more on tools relative to team size, and have a far higher share of automatable work. The labor arbitrage opportunity per person is 3-5x higher in legal than in design.
+
+---
+
+### The Figma Analogy: Where It Holds
+
+**1. The SoR wedge is workflow, not output.**
+
+Figma didn't win by making prettier designs. It won by becoming the place where design decisions happen — the file everyone opens, the link everyone shares. The output (the design) is secondary to the workflow (collaboration, review, handoff).
+
+Sandstone isn't trying to draft better contracts than Spellbook. It's trying to become the place where legal decisions happen — the dashboard the GC opens first, the system where requests flow in, where playbooks are codified and applied. Both are workflow-first, output-second.
+
+**2. Cross-functional expansion is identical.**
+
+~67% of Figma's users are NOT designers. PMs, engineers, marketers, executives all live in Figma because design decisions touch everyone. Figma's switching cost isn't "designers relearn a tool" — it's "the entire product development workflow breaks."
+
+Sandstone's equivalent: every employee who submits a legal request (sales, HR, procurement, product) becomes an implicit user. The legal team is 5 people, but 200+ employees interact with Sandstone through Slack/email. If you rip out Sandstone, every department's legal request flow breaks.
+
+| | Figma | Sandstone |
+|---|---|---|
+| **Core users (power users)** | Designers (~33%) | In-house lawyers |
+| **Business users (cross-functional)** | PMs, engineers, marketers (~67%) | Sales, HR, procurement, product |
+| **Business user interface** | Browser link (zero friction) | Slack/email (zero friction) |
+| **What breaks if you remove it** | Design review, handoff, design system | Legal intake, triage, playbook memory |
+
+**3. Institutional knowledge moat is analogous.**
+
+Figma's design systems (component libraries, tokens, styles) represent hundreds of hours of work embedded in the platform. They don't transfer. Switching = rebuilding from scratch.
+
+Sandstone's playbooks (negotiation positions, clause libraries, precedent decisions, triage rules) represent years of legal judgment embedded in the platform. Switching = losing the legal department's institutional brain.
+
+**4. Land-and-expand path mirrors Figma.**
+
+| Phase | Figma | Sandstone |
+|-------|-------|-----------|
+| **Land** | Free editor for individual designers | Intake/triage tool ($15-30K) |
+| **Expand users** | Team → cross-functional viewers/commenters | Legal team → business teams submit requests |
+| **Expand product** | Prototyping → FigJam → Dev Mode → Slides → Make | Contracts → Matter mgmt → Analytics → Spend mgmt |
+| **Platform** | Plugin ecosystem, design systems as infrastructure | Playbook marketplace, benchmarking network |
+
+---
+
+### Where the Analogy Breaks
+
+**1. Market size dynamics are inverted.**
+
+Design teams are large (30-75 people) but tool spend is tiny (~$15-50K/yr). Figma's TAM expansion came from adding more user types and charging per-seat.
+
+Legal teams are tiny (2-8 people) but tool spend is already relatively high ($50-150K/yr). Sandstone's TAM expansion must come from higher ACV per customer (more modules, more value per seat) rather than more seats.
+
+| | Figma | Sandstone |
+|---|---|---|
+| **Revenue growth lever** | More seats (horizontal) | Higher ACV (vertical) |
+| **Typical mid-market ACV** | $15K-$50K | $30-80K (intake) → $150-250K (full platform) |
+| **Path to $1B ARR** | ~20,000-50,000 customers | ~5,000-10,000 customers at higher ACV |
+
+**2. Buyer persona is fundamentally different.**
+
+Designers are early adopters — they switch tools constantly, share work publicly, evangelize new products. Figma's PLG motion worked because designers *want* to try new tools.
+
+GCs are late adopters — risk-averse, conservative, bound by compliance. They run 6-12 month procurement cycles. Sandstone can't rely on PLG. It needs enterprise sales.
+
+**3. The "free viewer" model may not translate.**
+
+Figma's viral loop depended on free browser-based viewing. Anyone could open a Figma link and become a user, see the product, become an advocate.
+
+Sandstone's cross-functional expansion happens through Slack/email — business users never *see* Sandstone's interface. They don't become advocates. The virality is invisible, which limits organic expansion.
+
+**4. AI changes the ceiling calculation.**
+
+Figma's value is creative — AI assists but doesn't replace the designer. The designer's judgment and taste are irreducible.
+
+Legal AI tools can actually *do the work*. If Sandstone's agents auto-resolve 60%+ of requests, value per dollar is dramatically higher than Figma — but it also means fewer legal seats over time, potentially cannibalizing seat-based revenue. This is why usage-based pricing matters more for Sandstone than for Figma.
+
+---
+
+### The Revenue Model Comparison
+
+| | Figma (Design SoR) | Sandstone (Legal SoR) |
+|---|---|---|
+| **Revenue at scale** | ~$1B ARR, ~450K customers | Target $200M+ ARR, 2,000-5,000 customers |
+| **ACV at scale** | ~$2K blended, ~$20K mid-market | ~$100-200K mid-market (full platform) |
+| **Gross margin** | 88-91% | Should be 80-90% (pure software) |
+| **NRR** | 134% | Needs 130%+ to work |
+| **Valuation** | ~$45B (IPO) | $5-10B potential |
+| **Path to SoR** | Free → PLG → cross-functional → platform | Intake wedge → enterprise sales → module expansion → platform |
+| **Time to $100M ARR** | ~7 years (2017-2024) | Needs 4-5 years (2026-2031) |
+
+### Figma's Financial Trajectory (for Reference)
+
+| Year | Revenue | Growth | Key Milestone |
+|------|---------|--------|---------------|
+| 2017 | $700K | — | First paid tier |
+| 2018 | $4M | 5.7x | Series B ($25M) |
+| 2019 | $25M | 6.25x | Plugin ecosystem launched |
+| 2020 | $75M | 3x | COVID accelerates adoption; Series D at $2B |
+| 2021 | $200M | 2.7x | FigJam launched; Series E at $10B |
+| 2022 | $400M | 2x | Adobe offers $20B acquisition |
+| 2023 | $600M | 50% | Deal blocked; Dev Mode launched; $1B breakup fee |
+| 2024 | $749M | 48% | 134% NRR; 95% of Fortune 500 |
+| 2025 | ~$1.05B | 40% | IPO at ~$45B; 13M+ MAUs |
+
+### Bottom Line
+
+The Figma analogy is the right mental model for *how* Sandstone becomes defensible: institutional knowledge lock-in, cross-functional embedding, workflow-first positioning. But the go-to-market is enterprise sales (not PLG), and the revenue math is fewer customers at much higher ACVs rather than massive volume.
+
+The strongest parallel: **Figma didn't win on features — it won on being the place where work happens.** If Sandstone can become the place where legal work happens (not just where contracts are drafted), the SoR dynamic creates the same kind of compounding defensibility, even in a smaller-headcount department.
+
+---
+
+### Q6 Sources
+- [ACC/MLA 2024 Law Department Management Benchmarking Report](https://www.mlaglobal.com/en/insights/research/2024-acc-law-department-management-benchmarking-report)
+- [Gartner: Legal Tech Spend Doubling by 2027](https://www.gartner.com/en/newsroom/press-releases/2024-11-13-gartner-predicts-legal-risk-and-compliance-functions-to-double-technology-spend-by-2027)
+- [Wolters Kluwer Legisway Benchmark 2025](https://www.wolterskluwer.com/en-gb/news/legisway-benchmark-for-legal-departments)
+- [BarkerGilmore 2024 In-House Counsel Salary Guide](https://www.barkergilmore.com/in-house-counsel-salary-guide/)
+- [NN/g: Typical Design Team Structures](https://www.nngroup.com/articles/design-team-statistics/)
+- [Figma S-1 Breakdown (Sacra)](https://sacra.com/c/figma/)
+- [Figma S-1 Breakdown (Tanay Jaipuria)](https://www.tanayj.com/p/figma-s-1-breakdown)
+- [Figma S-1 Breakdown (mostlymetrics)](https://www.mostlymetrics.com/p/figma-ipo-s1-breakdown)
+- [Why Figma Wins (kwokchain)](https://kwokchain.com/2020/06/19/why-figma-wins/)
+- [How Figma Grows (howtheygrow)](https://www.howtheygrow.co/p/how-figma-grows)
+- [First Round: Figma's Community-Led Growth](https://review.firstround.com/the-5-phases-of-figmas-community-led-growth-from-stealth-to-enterprise/)
+- [PriceLevel: Figma Pricing from Actual Buyers](https://www.pricelevel.com/vendors/figma/pricing)
+- [SaaS Capital 2025 Spending Benchmarks](https://www.saas-capital.com/blog-posts/spending-benchmarks-for-private-b2b-saas-companies/)
+
+---
+
+## Q7: What Needs to Happen Today to Reach $10B — Expansion Areas, Displacement Logic, and Failure Modes
+
+### Part 1: What Has to Happen Right Now (The Next 12-18 Months)
+
+Before Sandstone can think about expansion, they need to nail the beachhead:
+
+**1. Prove the intake wedge is sticky, not just useful**
+
+- **Daily active usage** — the GC and team open Sandstone first thing every morning. If it's a weekly check-in tool, it's dead.
+- **NRR above 130%** — customers expanding within first 6-12 months
+- **Zero voluntary churn** in the first cohort
+
+**2. Build the institutional knowledge moat early**
+
+Sandstone's defensibility depends on accumulating proprietary data — playbook decisions, contract precedents, risk tolerances, triage patterns. They need to:
+- Capture every lawyer decision (clause accepted/rejected, escalated, auto-approved)
+- Show playbooks improving over time ("auto-resolved 40% of requests this month, up from 15% in month one")
+- Make switching costs compound — after 6 months, migrating means losing your legal brain
+
+**3. Land 3-5 enterprise logos that validate the platform narrative**
+
+Mid-market proves PMF. Enterprise logos prove the *platform* narrative — justify higher-ACV modules, signal to market, force incumbents to react.
+
+**4. Hire the enterprise sales leader they don't have yet**
+
+The founders are ex-McKinsey consultants — they know how to diagnose problems and present to GCs. But enterprise sales is different: 6-12 month procurement cycles, IT security reviews, champion/coach relationships. They need a VP Sales who's done this at legal tech or adjacent vertical SaaS. This hire, more than any product decision, determines enterprise vs. mid-market ceiling.
+
+**5. Ship the first expansion module before raising Series A**
+
+Investors will see the intake ceiling. They need to demonstrate platform trajectory by shipping contract playbooks/drafting and showing early adoption data. "30% of intake customers expanded into contract automation within 90 days" is the sentence that unlocks a $50M+ Series A.
+
+---
+
+### Part 2: The Five Expansion Areas (And Why Sandstone Has a Shot)
+
+---
+
+**Expansion 1: Contract Playbooks & Drafting**
+*Displacing: Ironclad ($200M ARR, $3.2B+), Spellbook ($30M+ raised)*
+
+**What Sandstone would build:**
+- Codified negotiation playbooks (if deal < $100K → accept standard terms; if > $500K → require mutual indemnification)
+- First-draft generation using templates + playbooks + deal context from intake
+- Redline analysis — AI compares counterparty markup against playbook, flags deviations
+- Clause library with precedent search across contract history
+
+**Why Sandstone has a chance:**
+
+1. **Sandstone already owns the moment before the contract.** When a sales rep asks for a contract, the request flows through Sandstone. Context is already there — deal size, customer tier, urgency, history. Ironclad gets the contract *after* someone decided what kind is needed. Sandstone is upstream.
+
+2. **Ironclad's intake is an afterthought.** Their new "Intake Agent" extracts metadata from contracts. That's not the same as understanding *why* the contract exists, *who* requested it, and *what business context* surrounds it. Sandstone has that natively.
+
+3. **Ironclad is expensive, complex, and hard to implement.** Reviews cite steep learning curve, poor search, high cost, implementation complexity. Sandstone deploys in <10 minutes. For a 5-person team that doesn't need full CLM, Sandstone is radically simpler.
+
+4. **The "good enough" disruption.** Sandstone doesn't need to replace Ironclad for the F500. They need to be good enough for the 80% of companies that *don't have CLM at all*. Only 37% of legal departments use matter management software. Sandstone's contract features compete against *nothing*, not against Ironclad.
+
+**Why it might fail:** Ironclad has 2,000+ customers, $200M ARR, and is adding AI aggressively. If Jurist's contract automation gets good enough fast enough, Sandstone can't wedge in from below. Enterprises already on Ironclad are unlikely to rip it out — they'll keep Ironclad for contracts and Sandstone for intake only, limiting ACV expansion.
+
+---
+
+**Expansion 2: Matter Management**
+*Displacing: LawVu, Xakia, CounselLink (LexisNexis), SimpleLegal*
+
+**What Sandstone would build:**
+- Track all open legal matters (not just contracts) — litigation, regulatory inquiries, IP filings, employment disputes, board governance
+- Assign matters, track status, set deadlines
+- Connect matters to intake (every request becomes a tracked matter)
+- Capacity planning — lawyer workload visibility and bandwidth
+
+**Why Sandstone has a chance:**
+
+1. **The incumbents are old and un-loved.** CounselLink is enterprise-grade but clunky, expensive, feels like 2010 software. Only 37% of legal departments use matter management — the adoption gap tells you current products aren't compelling enough.
+
+2. **Sandstone already tracks matters implicitly.** Every intake request has a type, status, assignee, timeline, and context. Explicit matter management is a product evolution, not a new product.
+
+3. **LawVu and Xakia are small and vulnerable.** $10-50M ARR companies without massive enterprise moats, AI capabilities, or distribution advantages.
+
+4. **57% of legal teams cite adoption/change management as biggest tech concern.** Sandstone solves this by making matter management *automatic* — requests become tracked matters without the lawyer doing anything extra.
+
+**Why it might fail:** Complex litigation, IP portfolios, and regulatory investigations require deep domain features. A patent portfolio tracker and a contract intake system have very different requirements. Also, large enterprises have multi-year CounselLink contracts — switching costs are high.
+
+---
+
+**Expansion 3: Legal Spend Management & Outside Counsel Oversight**
+*Displacing: Brightflag, CounselLink (LexisNexis), Wolters Kluwer ELM, Legal Tracker*
+
+**What Sandstone would build:**
+- Outside counsel spend tracking by matter, firm, practice area
+- Automated invoice review (flag billing guideline violations, compare rates)
+- Law firm performance benchmarking
+- Budget forecasting using historical data
+- Panel management — recommend which firm to use for which matter type
+
+**Why Sandstone has a chance:**
+
+1. **Current tools don't give real-time visibility.** E-billing shows spend *after* the invoice arrives — weeks later. Sandstone, managing intake and outside counsel assignment, can track spend *as it happens*.
+
+2. **Natural flow from intake → outside counsel.** When a team can't handle a request internally, they send it to outside counsel. If Sandstone manages intake, it manages the handoff — which firm, what budget, how the matter progresses. Spend data becomes a workflow byproduct.
+
+3. **50% of GCs don't have data to justify budget requests to the CFO.** Sandstone can tie spend to business outcomes — "we spent $200K on outside counsel for the Acme deal, which closed at $50M."
+
+4. **Incumbents are billing-centric, not workflow-centric.** CounselLink knows *how much* you spent but not *why*. Sandstone ties spend to context.
+
+**Why it might fail:** Requires deep integration with law firm billing systems (LEDES format, eBillingHub). Technically complex, takes years. Big ELM vendors bundle spend management into their suite — hard to displace a "free" module.
+
+---
+
+**Expansion 4: Compliance & Regulatory Workflow Automation**
+*Displacing: Mitratech, OneTrust, GRC platform compliance modules*
+
+**What Sandstone would build:**
+- Recurring compliance task automation (privacy impact assessments, export control checks, regulatory filings)
+- Policy management — track policies, update schedules, attestation tracking
+- Compliance request routing — "can we do X?" triggers compliance workflow automatically
+- Regulatory change monitoring — flag when new regulations affect playbooks
+
+**Why Sandstone has a chance:**
+
+1. **Compliance requests already flow through legal intake.** Adding structured compliance workflows is a natural extension.
+2. **GRC platforms are overkill for most legal teams.** Sandstone can be "compliance enough" for the 80% that don't need enterprise GRC.
+3. **AI makes recurring compliance automatable.** Templated, repetitive tasks perfect for Sandstone's agent architecture.
+
+**Why it might fail:** Compliance is highly specialized by domain. Building depth for even one domain is massive product investment. Regulated industries have specific requirements general-purpose tools can't meet. "Mile wide, inch deep" risk.
+
+---
+
+**Expansion 5: Legal Intelligence Network (The Endgame)**
+*Displacing: Thomson Reuters, consulting firms, nothing (net-new market)*
+
+**What Sandstone would build:**
+- Cross-company benchmarking ("your NDA cycle time is 3.2 days — industry median is 5.1")
+- Anonymized playbook intelligence ("72% of SaaS companies your size cap indemnification at 1x")
+- Risk scoring based on clause patterns and precedent data
+- Market rate data for outside counsel by practice area and geography
+
+**Why Sandstone has a chance:**
+
+1. **Nobody has this data today.** No real-time, data-driven legal ops benchmarking product exists.
+2. **Data is a natural byproduct of scale.** 2,000+ companies → benchmarking dataset builds itself at zero marginal cost.
+3. **Network effects lock in.** Every new customer makes benchmarking more valuable. Only true network effect in legal tech.
+
+**Why it might fail:** Requires massive scale (~2,000+ customers) — 5-8 years away. Privacy concerns extreme. Data normalization across companies technically very hard.
+
+---
+
+### Part 3: The Five Failure Modes
+
+**Failure Mode 1: "Innovator's Dilemma in Reverse"**
+
+Sandstone's advantage is simplicity — deploy in 10 minutes. As they add modules, the product gets complex. Implementation timelines grow. The thing that won the beachhead gets sacrificed to expand. ServiceNow pulled this off. Most companies don't.
+
+**Failure Mode 2: "Middle of the Stack" Trap**
+
+Sandstone sits between foundation models (Anthropic/OpenAI) and incumbent applications (Ironclad, CounselLink). Squeezed from both:
+- From below: Anthropic ships legal agents at 10% of cost
+- From above: Ironclad adds AI agents within existing CLM
+
+Window to build irreplaceable workflow data moat: 12-24 months.
+
+**Failure Mode 3: "Feature, Not a Product"**
+
+If intake/triage becomes a commodity feature every platform adds (like email templates in CRMs), Sandstone's standalone value erodes. Defense: depth — not just routing requests but *understanding* them, *learning* from decisions, *acting* on patterns.
+
+**Failure Mode 4: "Sales Execution Gap"**
+
+Each expansion has a different buyer (GC for intake, commercial lawyer for contracts, legal ops for matter management, CFO for spend, compliance officer for regulatory). Different buyers = different pitch decks, ROI stories, sales motions. Young-founder-first-time-CEO risk most acute here.
+
+**Failure Mode 5: "Data Quality" Problem**
+
+Intelligence network needs clean, comparable data across thousands of companies. Legal data is messy — every company names contract types differently, clause language varies, matter categories aren't standardized. Building normalization layer is massive. Noisy data = useless insights = no network effect.
+
+---
+
+### Part 4: The Right Sequencing
+
+```
+RIGHT SEQUENCE:
+Intake → Contract Playbooks → Matter Management → Spend → Intelligence Network
+
+Each step builds on data from the previous:
+- Intake → request data
+- Contracts → decision data
+- Matter management → workload data
+- Spend → financial data
+- Intelligence → monetizes all of the above
+```
+
+```
+WRONG SEQUENCE:
+Intake → Compliance → Spend → Matter Management → Contracts
+
+Compliance is specialized, doesn't generate contract/decision data.
+Spend without matter management lacks workflow context.
+Scatters focus without building cumulative data advantage.
+```
+
+**Golden rule: every expansion should make the previous module more valuable.**
+
+---
+
+### The $10B Equation
+
+```
+$10B =
+  Nail intake beachhead (NRR >130%, 0% voluntary churn)
+  + Ship contracts module within 12 months
+  + Win 10+ enterprise logos in first 2 years
+  + Hire enterprise sales leader who's done this before
+  + Expand into matter management + spend by year 3-4
+  + Build data moat that makes switching impossible
+  + Avoid the Anthropic squeeze (move faster than model layer)
+  + Execute the right sequence (each module reinforces the last)
+```
+
+Miss any two → $2-4B ceiling. Miss three or more → $1-2B outcome. Nail all → the next ServiceNow for legal.
+
+---
+
+### Q7 Sources
+- [Ironclad: AI Agentic Launch](https://ironcladapp.com/resources/articles/ai-agentic-launch)
+- [Ironclad Reviews — Gartner Peer Insights](https://www.gartner.com/reviews/market/contract-life-cycle-management/vendor/ironclad)
+- [Ironclad Reviews — G2](https://www.g2.com/products/ironclad/reviews)
+- [Legal Bill Review: What Spend Management Tools Get Wrong](https://www.legalbillreview.com/blog/legal-spend-management-software-tools-get-wrong)
+- [LexCheck: Legal Ops Technology Pain Points](https://blog.lexcheck.com/legal-operations-technology-pain-points-and-solutions-lc)
+- [Streamline AI: Guide to Matter Management Software](https://www.streamline.ai/blog/in-house-legal-guide-to-matter-management-software)
+- [Sacra: Harvey at $195M ARR](https://sacra.com/research/harvey-at-195m-arr/)
+- [A Smart Bear: How Startups Beat Incumbents](https://longform.asmartbear.com/startup-beats-incumbent/)
+- [Ardent VC: Disruption of Incumbent Enterprise Software](https://medium.com/@ardent-vc/the-disruption-of-incumbent-enterprise-software-vendors-is-imminent-thanks-to-ai-agents-65e8afc44310)
+- [Bessemer: Ten Lessons from Vertical Software Investing](https://www.bvp.com/atlas/ten-lessons-from-a-decade-of-vertical-software-investing)
+- [Apperio: Legal Department Benchmarks 2024](https://www.apperio.com/blog/legal-department-benchmarks-2024-acc-report-takeaways)
