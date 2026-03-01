@@ -492,3 +492,159 @@ This is the dynamic to watch. Sandstone needs to establish itself as the in-hous
 - [White & Case: Global Rollout of Legora](https://legora.com/newsroom/white-case-announces-global-rollout-of-legora-across-43-offices)
 - [BusinessWire: Leya Rebrands as Legora](https://www.businesswire.com/news/home/20250219690496/en/Top-Legal-AI-Platform-Leya-Rebrands-as-Legora-Unveils-Agentic-Research-and-Product-Upgrades)
 - [Legal.io: Legora Series C Coverage](https://www.legal.io/articles/5751481/Legora-Raises-150M-Series-C-as-Legal-AI-Funding-Surge-Continues)
+
+---
+
+## Q4: Sandstone's Business Model — Pricing, Monetization, and Who Actually Uses It
+
+### What We Know (And Don't Know)
+
+Sandstone has **not publicly disclosed its pricing model**. There's no pricing page on sandstone.com, and none of the press coverage or investor materials reveal specific numbers. This is typical for early-stage enterprise SaaS selling to legal departments — they price through sales conversations, not self-serve.
+
+But we can reason through what the model almost certainly looks like based on (1) how the product works, (2) comparable in-house legal tools, and (3) the unit economics of the buyer.
+
+---
+
+### The Two-Sided User Model: Lawyers + Business Teams
+
+This is the most important product insight about Sandstone, and it's what makes their business model fundamentally different from Legora or Harvey.
+
+**Sandstone has two distinct user types:**
+
+**1. Legal team users (the buyers, the power users)**
+- The GC, in-house attorneys, paralegals, legal ops professionals
+- They configure playbooks, review AI-generated drafts, manage the workflow queue, set triage rules
+- They're inside Sandstone's interface daily — it's their dashboard
+
+**2. Business team users (the requestors, the high-volume users)**
+- Sales reps requesting contract reviews
+- HR submitting employment agreements
+- Finance requesting vendor contract approvals
+- Product managers asking about compliance questions
+- Marketing requesting regulatory review on campaigns
+
+These business users **never need to log into Sandstone directly.** They interact through the channels they already use:
+- A sales rep Slacks "hey legal, can you review this MSA for Acme Corp?" → Sandstone's AI agent intercepts it in Slack, classifies it, pulls Salesforce context, and creates a structured request
+- An HR manager emails a new hire offer letter for review → Sandstone's email integration captures it
+- A procurement manager submits a vendor contract through a portal or form
+
+**This is critical:** The business side of the company doesn't change behavior at all. They keep using Slack, email, and their existing tools. Sandstone is invisible to them — it works behind the scenes. The legal team is the one that sees and manages everything in Sandstone's interface.
+
+**Why this matters for the business model:** It means Sandstone can potentially touch **every employee who interacts with legal** without charging per-seat for all of them. A 2,000-person company might have 5 lawyers but 200+ people who submit legal requests annually.
+
+---
+
+### Most Likely Pricing Model
+
+Based on comparable products and Sandstone's architecture, the pricing almost certainly follows a **platform + legal seat hybrid**:
+
+**Comparable pricing from competitors:**
+
+| Product | Model | Price Range |
+|---------|-------|-------------|
+| **Streamline AI** | Platform fee + legal seats + bundled business users | $15K-$40K/yr (mid-market) |
+| **Xakia** | Per legal user/month | $90-$150/user/month ($1,080-$1,800/yr per user) |
+| **LawVu** | Custom per company size + modules | Not disclosed |
+| **Ironclad** | Platform fee + usage tiers | $50K-$200K+/yr (enterprise) |
+
+**Best estimate for Sandstone's model:**
+
+```
+STRUCTURE:
+├── Platform fee (base)           → $15K-$50K/yr depending on company size
+├── Legal user seats              → $X/seat/month for lawyers, paralegals, legal ops
+├── Business users                → Free or bundled (they interact via Slack/email,
+│                                   not the Sandstone UI)
+├── AI agent usage                → Possibly metered by volume of requests processed
+└── Add-on modules                → Playbook marketplace, advanced analytics, etc.
+```
+
+**Why this structure makes sense:**
+
+1. **Platform fee anchors the contract.** Enterprise legal buyers are used to annual platform fees. It provides revenue predictability.
+
+2. **Legal seats are limited but high-value.** Most in-house teams are 3-15 people. At $100-200/seat/month, that's $3,600-$36,000/yr from seats alone. Small number of seats, but each seat carries high willingness to pay (lawyers cost $200-400K/yr).
+
+3. **Business users should be free.** This is the growth hack. If Sandstone charged per business user, adoption would stall — no GC wants to justify per-seat costs for 200 sales reps who submit 2 requests/year each. Making business users free removes friction and increases request volume through Sandstone, which makes the platform more valuable to the legal team.
+
+4. **Usage-based pricing aligns with AI value delivery.** As legal teams automate more workflows (from intake → drafting → compliance), the volume of AI processing grows. Sandstone gets paid more as it delivers more value. This is the right incentive alignment.
+
+---
+
+### The ACV Math
+
+For a typical mid-market customer (2,000 employees, 5-person legal team):
+
+```
+Platform fee:                    $25,000/yr
+Legal seats (5 × $150/mo):       $9,000/yr
+AI usage (500 requests/yr):       $5,000/yr (est.)
+─────────────────────────────────
+Estimated ACV:                   ~$39,000/yr
+```
+
+For a Fortune 500 customer (50,000 employees, 30-person legal team):
+
+```
+Platform fee:                    $75,000/yr
+Legal seats (30 × $150/mo):     $54,000/yr
+AI usage (5,000 requests/yr):   $25,000/yr (est.)
+Premium modules:                $20,000/yr
+─────────────────────────────────
+Estimated ACV:                  ~$174,000/yr
+```
+
+**With "a couple dozen" customers at a blended ACV of $30-80K, that implies ~$700K-$2M in ARR today** — which is consistent with a seed-stage company that launched publicly in January 2026.
+
+---
+
+### Can Non-Lawyers Use It?
+
+**Yes — and this is by design.** Sandstone is explicitly built for two audiences:
+
+**For lawyers (the admin/power user experience):**
+- Configure AI agents and playbooks
+- Review and approve AI-generated work
+- Manage the request queue and assignments
+- Track metrics (cycle time, auto-resolution rate, team utilization)
+- Make legal judgment calls on escalated matters
+
+**For everyone else (the "invisible" experience):**
+- Submit requests through Slack, email, or forms — no training needed
+- Get status updates on their requests automatically
+- Receive completed documents (approved contracts, compliance sign-offs) back through their normal channels
+- Never need to learn a new tool or change their workflow
+
+**This is the product's killer insight.** Most legal tech tools are built *for lawyers* and require lawyers to change how they work. Sandstone is built so that **lawyers change how they work** (moving from email/spreadsheet chaos to a structured dashboard) **while everyone else keeps doing exactly what they were doing** (Slacking legal, emailing contracts, etc.).
+
+The AI agent is the bridge — it intercepts requests from business teams in their native channels and translates them into structured workflows for the legal team.
+
+---
+
+### Why This Model Is Strategically Smart
+
+**1. Land-and-expand economics.** Start with intake (low ACV, fast deployment, immediate ROI). Expand into drafting, playbooks, analytics (higher ACV, more seats, more usage). A $30K intake deal can become a $150K platform deal within 18 months.
+
+**2. Business user virality without business user cost.** Every employee who submits a legal request through Sandstone's agents becomes an implicit user — increasing the platform's data and value without adding to the customer's cost. This makes the ROI story easy for the GC to sell internally.
+
+**3. Usage-based pricing aligns with AI value delivery.** As the AI handles more work (auto-resolving simple requests, generating first drafts, running compliance checks), the usage grows. Sandstone gets paid more as it delivers more value. This is the right incentive alignment.
+
+**4. Data moat deepens with every request.** Every request, every playbook decision, every approved clause feeds back into the system. The more a company uses Sandstone, the smarter it gets, the harder it is to switch. This justifies premium pricing over time.
+
+---
+
+### The Key Business Model Risk
+
+**Pricing power depends on being the system of record.** If Sandstone is just an intake tool, it's a $15-30K/yr product competing with Streamline AI. If it becomes the legal operating system (intake + drafting + matter management + analytics), it's a $100-200K+/yr platform with strong retention.
+
+The risk is getting stuck at the intake layer — useful but not indispensable enough to command premium pricing. The business model only works at scale if customers expand beyond intake into the higher-value modules.
+
+---
+
+### Q4 Sources
+- [Sequoia: Partnering with Sandstone](https://sequoiacap.com/article/partnering-with-sandstone-an-ai-native-platform-for-in-house-legal-teams/)
+- [Bloomberg Law: Sequoia Leads Backing of Sandstone](https://news.bloomberglaw.com/legal-ops-and-tech/sequoia-leads-backing-of-ai-legal-technology-startup-sandstone)
+- [LegalTechTrend: Sandstone Pioneering AI Integration](https://legaltechtrend.com/sandstone-pioneering-ai-integration-in-corporate-legal-departments/)
+- [Streamline AI Pricing](https://www.streamline.ai/pricing)
+- [Xakia Pricing & Features](https://www.xakiatech.com)
+- [Artificial Lawyer: Sandstone Raises $10M](https://www.artificiallawyer.com/2026/01/13/sandstone-raises-10m-seed-led-by-sequoia-for-inhouse-ai-agents/)
