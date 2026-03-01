@@ -160,3 +160,168 @@ Sandstone positions itself as the **"operating system for in-house legal departm
 - [Mordor Intelligence: AI Software Market in Legal Industry](https://www.mordorintelligence.com/industry-reports/ai-software-market-in-legal-industry)
 - [Future Market Insights: Legal AI Market to 2035](https://www.futuremarketinsights.com/reports/legal-ai-market)
 - [LawNext: Legal Tech Spending Surges 9.7%](https://www.lawnext.com/2026/01/legal-tech-spending-surges-9-7-as-firms-race-to-integrate-ai-says-report-on-state-of-legal-market.html)
+
+---
+
+## Q2: Market & Product Dynamics — What Does Sandstone Actually Do, and What Can It Become?
+
+### Part 1: What Does an In-House Legal Team Actually Do All Day?
+
+Before you can understand Sandstone's product, you need to understand the buyer. An in-house legal team at a mid-market or enterprise company is essentially a **shared services function** — like IT or HR — that every other department depends on but nobody fully understands. Here's what their day looks like:
+
+**The request firehose:**
+- Sales closes a deal → legal needs to review/draft the contract
+- HR wants to hire in Germany → legal needs to check employment law compliance
+- Marketing wants to run a promotion → legal needs to review for regulatory risk
+- Product wants to ship a feature that touches user data → legal needs privacy review
+- Finance wants to sign a vendor contract → legal needs to review terms
+- A customer threatens litigation → legal needs to assess and respond
+
+These requests arrive via **email, Slack DMs, hallway conversations, and forwarded threads**. There is no standardized intake process at most companies. The GC or a senior lawyer manually triages — reading every request, figuring out what type it is, what priority it should be, who on the team should handle it, and what context is needed from the business side.
+
+**The tools they use today:**
+- **Spreadsheets** as matter trackers and databases
+- **Email** as the primary communication and request channel
+- **Shared drives** full of contract templates with no version control
+- **Their own memory** as the institutional knowledge store ("how did we handle this last time?")
+- Maybe a CLM tool (Ironclad, DocuSign CLM) for the contract signing workflow itself
+- Maybe a matter management tool (LawVu, Xakia) for tracking open items
+
+**The core pain:** Legal teams are **reactive, context-starved, and administratively overloaded**. A 5-person legal team at a 2,000-person company might handle 500+ requests per year. They spend 40-60% of their time on administrative coordination (figuring out what the request is, gathering context, routing it) rather than actual legal judgment.
+
+---
+
+### Part 2: What Sandstone Actually Does (The Product Mechanics)
+
+Sandstone attacks this problem in layers. Think of it as three concentric rings:
+
+**Ring 1 — Intake & Triage (The Wedge)**
+
+This is where Sandstone starts and where immediate value is delivered:
+
+1. **Unified request capture**: Instead of requests arriving via random Slack DMs and emails, Sandstone creates a single intake point. Business teams submit requests through Slack, email, or directly in Sandstone. The AI agent intercepts and classifies them.
+
+2. **Automatic classification**: The AI reads the request and determines: What type is this? (NDA, sales agreement, employment contract, vendor agreement, policy question, litigation matter...) What priority? What business unit? Who on the legal team should handle it?
+
+3. **Context enrichment**: This is Sandstone's key differentiator. When a sales rep asks for a contract review, Sandstone pulls context from Salesforce (deal size, customer tier, renewal vs. new), from the company's past dealings with that customer, and from the legal team's own playbooks. The lawyer doesn't get a bare "please review this contract" — they get a fully contextualized brief.
+
+4. **Routing & assignment**: Based on the classification and team capacity, the request is routed to the right lawyer with all context attached.
+
+**Time-to-value: < 10 minutes to deploy.** This is the "land" motion — immediate, obvious ROI. A legal team goes from chaotic email/Slack intake to structured, AI-triaged workflow in a day.
+
+**Ring 2 — Playbook-Driven Execution (The Expand)**
+
+Once requests are flowing through Sandstone, the platform starts doing actual legal work:
+
+1. **Contract playbooks**: The legal team codifies their negotiation positions into Sandstone. Example: "For deals under $100K, we accept standard indemnification. For deals over $500K, we require mutual indemnification with a cap at 2x contract value." The AI applies these playbooks automatically.
+
+2. **First-draft generation**: For standard agreements (NDAs, vendor contracts, employment agreements), Sandstone generates a first draft using the company's templates + playbooks + deal-specific context. The lawyer reviews and approves rather than drafting from scratch.
+
+3. **Redlining assistance**: When a counterparty sends back a marked-up contract, Sandstone compares their positions against the company's playbook and flags deviations that need human attention vs. ones that are within acceptable bounds.
+
+4. **Institutional knowledge capture**: Every decision a lawyer makes — every accepted clause, every rejected term, every escalation — feeds back into the system. The playbooks evolve dynamically. This is "context in motion."
+
+**Ring 3 — Legal Operating System (The Vision)**
+
+This is where Sandstone wants to go — becoming the system of record for the entire legal function:
+
+1. **Matter management**: Track all open legal matters (not just contracts) — regulatory inquiries, litigation, IP filings, board governance
+2. **Spend management**: Track outside counsel spend, compare law firm performance, optimize legal budget allocation
+3. **Compliance workflows**: Automate recurring compliance tasks (privacy reviews, export control checks, regulatory filings)
+4. **Analytics & reporting**: Give the GC a dashboard — request volume by type, average cycle time, team utilization, auto-resolution rates, cost per matter
+5. **Cross-company benchmarking**: Anonymized data across Sandstone's customer base to benchmark playbook positions ("85% of companies in your industry accept this clause")
+
+---
+
+### Part 3: The Product Expansion Map
+
+Here's how I'd map the expansion trajectory from narrow wedge to full platform:
+
+```
+STAGE 1 (NOW): Intake & Triage
+├── Request capture (Slack, email, forms)
+├── AI classification & routing
+├── Context enrichment (Salesforce, HRIS)
+└── Basic dashboarding
+    │
+    ▼
+STAGE 2 (6-18 months): Contract Automation
+├── Playbook-driven first drafts
+├── Redline analysis & negotiation assist
+├── Template management & version control
+├── Clause library with precedent search
+└── Approval workflows
+    │
+    ▼
+STAGE 3 (18-36 months): Legal Operations Platform
+├── Full matter management (beyond contracts)
+├── Outside counsel management & spend tracking
+├── Compliance workflow automation
+├── Board & governance workflows
+├── Advanced analytics & GC dashboards
+    │
+    ▼
+STAGE 4 (3-5 years): Legal Intelligence Network
+├── Cross-company benchmarking data
+├── Playbook marketplace
+├── Industry-specific risk scoring
+├── Predictive analytics (litigation risk, regulatory exposure)
+└── Integration as system of record for legal
+```
+
+**Each stage expands the TAM:**
+
+| Stage | What It Replaces | Market Size |
+|-------|-----------------|-------------|
+| **1. Intake/Triage** | Streamline AI, email/Slack chaos | ~$500M-1B |
+| **2. Contract Automation** | Ironclad, Spellbook, manual drafting | ~$8-10B (CLM market) |
+| **3. Legal Ops Platform** | LawVu, Xakia, CounselLink, SimpleLegal | ~$3-5B (ELM market) |
+| **4. Intelligence Network** | Thomson Reuters, consulting firms, nothing | ~$10B+ (net new) |
+
+**Total addressable market at full expansion: $20-25B+**
+
+---
+
+### Part 4: Why This Product Architecture Might Win
+
+**The "Salesforce for Legal" analogy is apt, but with a twist:**
+
+Salesforce didn't start by trying to be the CRM. It started as a contact database that was easier to use than Siebel. Then it expanded into opportunity tracking, then pipeline management, then analytics, then a full platform. The key was that **once sales teams were living in Salesforce every day, the switching costs became massive**.
+
+Sandstone is running the same playbook:
+
+1. **Start with intake** — the most painful, most frequent touchpoint (every legal request)
+2. **Become the daily dashboard** — the thing the GC opens first thing in the morning
+3. **Capture institutional knowledge** — make the system smarter the longer you use it (data moat)
+4. **Expand into adjacent workflows** — once you're the hub, you can add spokes
+
+**The critical dynamic is this:** Legal teams that adopt Sandstone for intake will, within 6-12 months, have their entire institutional knowledge encoded in the system — their playbooks, their precedent decisions, their risk tolerances. That creates **massive switching costs**. Migrating away from Sandstone means losing your legal brain.
+
+This is fundamentally different from a CLM tool like Ironclad, which stores contracts but doesn't learn your decision-making patterns. Ironclad is a filing cabinet. Sandstone wants to be the legal team's brain.
+
+---
+
+### Part 5: The Key Product Risks
+
+1. **"Workflow" products need workflow complexity.** If 80% of a legal team's requests are simple NDAs and vendor agreements, a simple template library might be "good enough." Sandstone needs the work to be complex enough that AI-powered triage and context enrichment actually matter.
+
+2. **The 30+ integrations claim needs to be real.** The entire value proposition depends on pulling context from Salesforce, HRIS, email, Slack, etc. If these integrations are shallow (just pulling names and dates) rather than deep (understanding deal context, employee seniority, contract history), the "context enrichment" story falls apart.
+
+3. **Playbook adoption requires behavioral change.** Lawyers need to actually codify their decision-making into Sandstone's playbook system. That requires trust in the AI and a willingness to make tacit knowledge explicit. Many senior lawyers resist this because their institutional knowledge is their job security.
+
+4. **The expansion path crosses into incumbent territory.** Stage 1 (intake) is relatively uncontested. Stage 2 (contracts) puts them against Ironclad ($333M raised). Stage 3 (legal ops) puts them against Thomson Reuters and LexisNexis. Each expansion stage increases competitive intensity.
+
+5. **AI reliability bar is binary in legal.** A contract playbook that's 95% accurate isn't useful — it means 1 in 20 clauses could be wrong. Legal requires near-100% accuracy or the lawyer still has to review everything manually, which destroys the ROI story.
+
+---
+
+### Q2 Sources
+- [Sequoia: Partnering with Sandstone](https://sequoiacap.com/article/partnering-with-sandstone-an-ai-native-platform-for-in-house-legal-teams/)
+- [Artificial Lawyer: Sandstone Raises $10M](https://www.artificiallawyer.com/2026/01/13/sandstone-raises-10m-seed-led-by-sequoia-for-inhouse-ai-agents/)
+- [Sandstone Blog: Transforming Legal Operations](https://sandstone.com/blog/transforming-legal-operations-embrace-the-power-of-ai-for-scalable-workflows)
+- [Legal Tech's $32B Market Map](https://blog.legaltechmg.com/legal-techs-32b-market-map)
+- [Dazychain: Legal Intake Workflow Guide](https://www.dazychain.com/guides/legal-intake-workflow-guide/)
+- [Streamline AI: Value of Legal Intake Software](https://www.streamline.ai/article/legal-intake-and-workflow-software-benefits)
+- [Fortune Business Insights: Legal Technology Market](https://www.fortunebusinessinsights.com/legal-technology-market-109527)
+- [Grand View Research: U.S. Legal Technology Market](https://www.grandviewresearch.com/industry-analysis/us-legal-technology-market-report)
+- [Mordor Intelligence: Legal Tech Market](https://www.mordorintelligence.com/industry-reports/global-legal-tech-market)
