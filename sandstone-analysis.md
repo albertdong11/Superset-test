@@ -1386,3 +1386,159 @@ And this is why Balkansky led both rounds two months apart — he'd been thinkin
 - [Sequoia: Bogomil Balkansky Profile](https://sequoiacap.com/people/bogomil-balkansky/)
 - [Sequoia: Seven Questions with Bogomil Balkansky](https://sequoiacap.com/article/seven-questions-with-bogomil-balkansky/)
 - [The Recursive: Balkansky on First Principles](https://therecursive.com/bogomil-balkansky-from-sequoia-capital-on-the-first-principles-of-building-great-startups/)
+
+---
+
+## Q9: What Data Does Sandstone Need to Capture, and Who Else Is After It?
+
+### Part 1: The Three Layers of Data
+
+Sandstone's data moat is three distinct layers, each with different capture timelines, competitive dynamics, and strategic value.
+
+**Layer 1: Company-Specific Institutional Knowledge (Months 1-12)**
+
+Unique to each customer. Cannot be replicated by anyone else.
+
+| Data Type | What It Looks Like | Why It Matters |
+|-----------|-------------------|----------------|
+| **Request classification patterns** | "40% commercial contracts, 25% employment, 15% vendor, 10% regulatory, 10% other" | Enables accurate auto-classification and routing |
+| **Lawyer decision patterns** | "Sarah modifies indemnification on deals >$1M; Mike auto-approves standard NDAs; GC escalates IP matters" | System learns *who* handles *what* and auto-routes |
+| **Playbook positions** | "Cap liability at 2x for enterprise, 1x for SMB; never accept unlimited indemnification" | AI applies rules automatically, flags only true deviations |
+| **Clause-level decisions** | "Accepted 847 clauses, modified 203, rejected 94 — by clause type, deal size, counterparty" | Playbooks evolve based on actual behavior |
+| **Counterparty intelligence** | "Acme pushes on liability; BigCo accepts standard terms 90% of time; StartupX needs unusual IP provisions" | Negotiation prep becomes automatic |
+| **Cycle time data** | "NDA: 0.8 days. MSA: 4.2 days. Enterprise >$5M: 12.3 days. Sarah 40% faster on commercial" | Data-driven capacity planning and SLA setting |
+| **Escalation patterns** | "5 clause types always go to GC. 12 request types auto-resolve. 3 counterparties always need senior review" | System learns what to automate vs. what needs human judgment |
+
+**Who else is competing for Layer 1:**
+
+- **Ironclad**: Has contract clause decisions (1 billion contracts processed, 175+ AI clause types, custom training). But it's contract-centric — knows clause decisions but not the business context behind them. Sandstone's advantage is *upstream context*.
+- **Claude Cowork Legal Plugin**: Configurable with playbooks and risk tolerances, but **stateless** — doesn't learn from decisions over time. It's a tool, not a system of record.
+- **Harvey**: Captures law firm patterns but for outside counsel, not in-house teams.
+
+---
+
+**Layer 2: Industry-Specific Pattern Data (Months 12-36)**
+
+Requires 50-200+ customers with density in specific verticals.
+
+| Data Type | What It Looks Like | Why It Matters |
+|-----------|-------------------|----------------|
+| **Industry clause norms** | "92% of SaaS companies accept standard limitation of liability; only 34% of healthcare companies do" | New customers get pre-configured playbooks on day one |
+| **Vertical request patterns** | "FinTech gets 3x more regulatory inquiries; manufacturing gets 2x more employment matters" | Intake pre-trained for each industry |
+| **Deal structure benchmarks** | "Median enterprise SaaS MSA cycle time is 5.2 days; top quartile is 2.1 days" | Performance benchmarking against industry peers |
+| **Risk threshold patterns** | "Companies your size/industry typically accept X risk for Y contract type" | New customers inherit industry-calibrated defaults |
+| **Outside counsel usage** | "Companies your size in your industry spend $X on IP counsel, $Y on commercial litigation" | Data-informed budget planning |
+
+**This is where data becomes a product feature.** A new SaaS company gets a pre-built playbook based on what 200 other SaaS companies actually do, then customizes from there.
+
+**Who else is competing for Layer 2:**
+
+- **TermScout**: Most direct threat. Extracts 750+ data points per contract, benchmarks against real-world agreements, scores contracts as vendor-favorable/balanced/customer-favorable. Has a genuine clause benchmarking dataset — but from publicly available contracts, not in-house decision patterns.
+- **Law Insider**: 10+ years, largest structured clause dataset in the world — millions of contracts from SEC filings, 300K+ users. But it's public data, not proprietary operational data.
+- **Ironclad**: 1B contracts processed has the raw volume but hasn't productized cross-company benchmarking. Data sits in customer-siloed instances.
+- **Onit/SimpleLegal**: 3,000+ customers in legal ops — spend and matter data at scale, but haven't built cross-company intelligence products from it.
+
+**Key distinction:** TermScout and Law Insider benchmark *contract language* (what clauses say). Sandstone would benchmark *decision behavior* (what lawyers actually do with those clauses). Language benchmarks are commoditizable. Decision benchmarks are proprietary.
+
+---
+
+**Layer 3: Cross-Market Intelligence Network (Years 3-5+)**
+
+Requires 1,000+ customers with consistent, normalized data.
+
+| Data Type | What It Looks Like | Why It Matters |
+|-----------|-------------------|----------------|
+| **Universal clause benchmarking** | "Here's how indemnification, liability, IP, termination are typically structured — and where you fall" | Bloomberg Terminal for contracts |
+| **Predictive risk scoring** | "This clause combination has 12% correlation with subsequent disputes" | Quantitative risk management |
+| **Outside counsel market rates** | "Avg commercial litigation rate in Southeast: $580; you pay $720. Top firms charge $650 with 30% faster resolution" | Spend optimization at scale |
+| **Negotiation velocity intelligence** | "Counterparties who push on clause X also push on Y and Z 78% of the time — here's the optimal counter-offer" | AI-powered negotiation strategy |
+| **Regulatory impact forecasting** | "When GDPR enforced, similar companies took 4.3 months to update DPA terms. Here's what changed" | Proactive compliance |
+
+**This is net-new market creation.** No one has this today.
+
+**Who could build Layer 3:**
+
+- **Ironclad** has contract volume but not workflow/decision data. Would need to become a workflow platform first.
+- **Harvey** has law firm data but not in-house data. Skewed toward hardest/most expensive work, not the 80% of routine matters.
+- **Anthropic/OpenAI** could theoretically build this if their legal plugins retain decision data. But massive privacy concerns — would companies trust their foundation model provider with legal decision patterns?
+- **Thomson Reuters/LexisNexis** have brand and distribution but editorial data (case law, statutes), not operational data (what companies actually do). LexisNexis just partnered with Claude Cowork — they could bolt AI onto CounselLink's data, but the platform is old.
+
+---
+
+### Part 2: The Capture Priority Matrix
+
+```
+CRITICAL (Months 1-6):
+├── Request classification → enables auto-routing
+├── Lawyer assignment patterns → enables capacity planning
+├── Cycle time by request type → enables SLA benchmarking
+└── Basic playbook positions → enables first-draft automation
+
+HIGH PRIORITY (Months 6-18):
+├── Clause-level accept/reject/modify decisions → enables playbook evolution
+├── Counterparty negotiation patterns → enables negotiation prep
+├── Escalation patterns → enables auto-resolution expansion
+├── Integration context depth (Salesforce, HRIS) → enables context enrichment
+└── Outside counsel assignment decisions → enables spend tracking
+
+STRATEGIC (Months 18-36):
+├── Cross-company clause benchmarks within verticals → enables industry playbooks
+├── Cycle time benchmarks across companies → enables performance comparison
+├── Risk threshold patterns by industry/size → enables calibrated defaults
+└── Outside counsel performance comparisons → enables law firm benchmarking
+
+ENDGAME (Years 3-5):
+├── Universal clause benchmarking across all customers
+├── Predictive dispute correlation data
+├── Market rate intelligence for outside counsel
+└── Regulatory impact forecasting
+```
+
+---
+
+### Part 3: The Competitive Data Landscape
+
+| Player | Data They Have | What They're Missing | Threat Level |
+|--------|---------------|---------------------|-------------|
+| **Ironclad** | 1B+ contracts, 175+ clause types, custom training | Business context, workflow/routing data, non-contract matters | **HIGH** — if they expand into workflow, contract corpus outmatches Sandstone on clause data |
+| **Harvey** | Law firm work patterns, research queries, drafting across 1,000+ firms | In-house data entirely. Sees outside counsel side, not in-house | **MEDIUM** — different data, different buyer |
+| **Legora** | European law firm data, document review, drafting intelligence | In-house data, US market data. Portal captures some in-house interaction | **MEDIUM** — Portal bridges but from outside |
+| **Claude Cowork** | Whatever orgs configure. Stateless, no compounding learning | Persistent institutional knowledge, cross-company patterns | **HIGH** — not for data capture, but for commoditizing the *functions* that generate data |
+| **TermScout** | 750+ data points per contract, benchmarking, fairness scoring | In-house decision data, workflow data. Public contracts only | **MEDIUM** — closest on benchmarking, different data source |
+| **Law Insider** | Millions of clauses from SEC filings, 10+ year dataset, 300K users | Proprietary in-house data, decision patterns. Public docs only | **LOW** — reference data, not operational |
+| **Onit/SimpleLegal** | 3,000+ customers of spend/matter data | AI sophistication, modern UX, workflow automation. Legacy architecture | **MEDIUM** — customer base and volume but no intelligence products built |
+| **Thomson Reuters / LexisNexis** | Editorial legal data, CounselLink matter/spend data | Operational decision data, modern AI, workflow automation | **LOW-MEDIUM** — LexisNexis partnered with Claude Cowork. Could bolt AI onto CounselLink |
+
+---
+
+### Part 4: Why This Is a Race, Not a Moat (Yet)
+
+**Sandstone's moat doesn't exist yet.**
+
+"A couple dozen" customers. Thin institutional knowledge. No cross-company benchmarking because not enough companies are on the platform.
+
+The moat is *potential* — it becomes real only if Sandstone captures enough data fast enough:
+
+| Milestone | What It Unlocks | When Needed |
+|-----------|----------------|-------------|
+| **100 customers × 6 months** | Company-specific playbooks meaningfully better than defaults | End of 2026 |
+| **500 customers × 12 months** | Industry benchmarks statistically meaningful in top 3-4 verticals | Mid-2027 |
+| **1,000 customers × 18 months** | Cross-company intelligence dense enough to be a standalone product | End of 2028 |
+| **2,000+ customers × 24 months** | Data moat deep enough that no competitor replicates within 3-5 years | 2029 |
+
+**If Sandstone is still at 50-100 customers in mid-2027, the moat window closes.** Ironclad will have added AI workflow features. Claude Cowork will have iterated on legal plugins. Harvey may have launched in-house features. The data advantage won't materialize because there won't be enough data.
+
+Growth velocity in the next 12-18 months is existential. The product needs to acquire customers fast enough to build the data moat before the window closes. It's a race against commoditization.
+
+---
+
+### Q9 Sources
+- [Ironclad: AI Clauses and Properties](https://support.ironcladapp.com/hc/en-us/articles/18703085705495-AI-Clauses-and-Properties-Overview)
+- [Ironclad: Advanced Contract Analytics](https://ironcladapp.com/journal/contract-data/advanced-contract-analytics)
+- [TermScout: Why AI-Driven Contract Benchmarks Matter](https://blog.termscout.com/why-ai-driven-contract-benchmarks-matter)
+- [TermScout: Contract Benchmarking](https://blog.termscout.com/contract-benchmarking-why-it-matters-how-it-works)
+- [Law Insider: Benchmarking AI-Generated Clauses](https://www.lawinsider.com/resources/articles/the-law-insider-index-benchmarking-ai-generated-clauses-against-market-reality)
+- [LawNext: Anthropic Legal Plugin](https://www.lawnext.com/2026/02/anthropics-legal-plugin-for-claude-cowork-may-be-the-opening-salvo-in-a-competition-between-foundation-models-and-legal-tech-incumbents.html)
+- [Artificial Lawyer: Anthropic Moves Into Legal Tech](https://www.artificiallawyer.com/2026/02/02/anthropic-moves-into-legal-tech/)
+- [Onit/SimpleLegal: AskAI](https://www.newswire.com/news/onit-introduces-askai-to-transform-legal-spend-analysis-and-streamline-22564413)
+- [Harvey AI: Custom Legal Models](https://openai.com/index/harvey/)
