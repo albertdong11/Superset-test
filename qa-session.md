@@ -648,3 +648,216 @@ The risk is getting stuck at the intake layer — useful but not indispensable e
 - [Streamline AI Pricing](https://www.streamline.ai/pricing)
 - [Xakia Pricing & Features](https://www.xakiatech.com)
 - [Artificial Lawyer: Sandstone Raises $10M](https://www.artificiallawyer.com/2026/01/13/sandstone-raises-10m-seed-led-by-sequoia-for-inhouse-ai-agents/)
+
+---
+
+## Q5: How Does Sandstone Become a $10B+ Company — And Where Does It Get Stuck at $2-4B?
+
+### The Framework: What Makes a $10B Software Company
+
+There are only two ways to get there:
+
+**Path A: Revenue-driven** — $500M-$1B+ in ARR at a 10-20x multiple. This is the Veeva/Procore/ServiceNow path. Real revenue, real margins, real durability.
+
+**Path B: Hype-driven** — $100-200M ARR at a 50-100x multiple during a bubble. This is Harvey's current path ($195M ARR, $11B valuation = 56x). Works until it doesn't.
+
+For Sandstone to be *durably* worth $10B+, it needs Path A.
+
+---
+
+### The TAM Stack: Where the Money Actually Is
+
+**Layer 1: In-House Legal Software (Where Sandstone Is Today)**
+
+| Segment | Market Size | Key Players |
+|---------|-------------|-------------|
+| Legal intake & triage | ~$500M-$1B | Streamline AI, Checkbox |
+| Contract lifecycle management | ~$8-10B | Ironclad ($200M ARR), DocuSign CLM, Agiloft |
+| Matter management / ELM | ~$3-5B | LawVu, Xakia, CounselLink, SimpleLegal |
+| Legal spend management | ~$2-3B | Brightflag, BusyLamp, CounselLink |
+| Legal AI (in-house specific) | ~$500M-$1B | Sandstone, GC AI, Spellbook |
+| **Total in-house legal software** | **~$15-20B** | |
+
+**Layer 2: Corporate Legal Spend (The Labor Budget Sandstone Displaces)**
+
+| Segment | Market Size |
+|---------|-------------|
+| Total US legal services market | ~$400B |
+| Corporate legal department internal spend | ~$100-150B (est.) |
+| Outside counsel spend by corporations | ~$150-200B |
+| Of which: routine/automatable work | ~$50-80B (Goldman estimates 44% of legal work is automatable) |
+
+**Layer 3: Adjacent Enterprise Workflow (The ServiceNow Analogy)**
+
+| Segment | Market Size |
+|---------|-------------|
+| Compliance & regulatory tech | ~$12-15B |
+| GRC (governance, risk, compliance) | ~$15-20B |
+| Procurement & vendor management | ~$10B+ |
+
+**Key insight:** Sandstone's *current* TAM (intake/triage for in-house teams) is small — maybe $500M-$1B. But the *addressable market* expands dramatically depending on how far the product stretches.
+
+---
+
+### The $10B+ Path: What Has to Go Right
+
+**Stage 1 → $50M ARR (Years 1-3): Win In-House Intake & Triage**
+
+```
+Target: 500-1,000 mid-market + enterprise customers
+ACV: $50-100K average
+Revenue: $25-50M ARR
+```
+
+The "land" phase. Sandstone becomes the default intake/triage platform for in-house legal. They need to:
+- Win the mid-market decisively (5-20 person legal teams at $1-10B revenue companies)
+- Land 3-5 marquee F500 logos for credibility
+- Achieve 130%+ net dollar retention
+- Beat Streamline AI and prevent Ironclad from adding intake features
+
+**Probability: Moderate-High.** The wedge is real, pain is acute, Sequoia + GC investors give distribution.
+
+---
+
+**Stage 2 → $150-250M ARR (Years 3-5): Become the Legal Operating System**
+
+This is where the company either breaks out or gets stuck:
+
+```
+Module 1: Contract automation (playbooks, drafting, redlining)      → +$30-50K ACV
+Module 2: Matter management (all legal work, not just contracts)     → +$20-40K ACV
+Module 3: Analytics & reporting (GC dashboard, team metrics)         → +$10-20K ACV
+Module 4: Outside counsel management (law firm selection, spend)     → +$20-40K ACV
+───────────────────────────────────────────────────────────────────
+Blended ACV with modules: $150-250K per customer
+Customers needed: 1,000-1,500
+Revenue: $150-250M ARR
+```
+
+**This is the ServiceNow playbook.** ServiceNow started with IT help desk tickets and expanded into IT operations, then HR, then customer service, then security.
+
+ServiceNow's timeline: $1.5B ITSM niche → $10B+ platform:
+- 2005: 12 customers, $2.5M raised
+- 2012: IPO at $2.96B
+- 2015: $1B ARR (10 years post-commercialization)
+- 2024: $10B+ ARR
+
+Sandstone's equivalent expansion:
+- **IT help desk ticket → legal intake request** (the wedge)
+- **ITSM → legal matter management** (first expansion)
+- **ITOM → contract automation** (second expansion)
+- **HR/CSM → compliance, procurement, spend management** (cross-functional)
+
+**Probability: This is the hard part.** Expanding into CLM means competing with Ironclad ($200M ARR, 2,000+ customers). Can a 3-year-old startup win against entrenched incumbents?
+
+**The key advantage:** Workflow → contracts is easier than contracts → workflow. Once you own the intake layer and the lawyer's daily dashboard, adding contract features is product expansion. Ironclad adding intake means rebuilding their entire front-end architecture.
+
+---
+
+**Stage 3 → $500M-$1B ARR (Years 5-8): Platform + Network Effects**
+
+Two things that are very hard to build:
+
+**A. Cross-company data network**
+
+```
+"85% of companies in your industry cap indemnification at 2x contract value"
+"Your average contract cycle time is 4.2 days — top quartile is 1.8 days"
+"Companies your size typically spend $X on outside counsel for this matter type"
+```
+
+The Bloomberg Terminal for legal operations. Nobody has this today — net-new market worth $5-10B. Defensible because you can only build it with scale.
+
+**B. Marketplace / ecosystem play**
+
+```
+- Playbook marketplace (buy pre-built contract playbooks for your industry)
+- Outside counsel marketplace (find and evaluate law firms through Sandstone)
+- Integration ecosystem (third-party apps built on Sandstone's platform)
+- Legora/Harvey interop (become the in-house endpoint law firm tools connect to)
+```
+
+The Salesforce AppExchange moment — platform becomes marketplace.
+
+**Probability: Low but not impossible (10-15%).** Only 1 in 50 enterprise software companies reaches this.
+
+---
+
+### The $2-4B Ceiling: Where Sandstone Gets Stuck
+
+**Scenario 1: "Great Intake Tool, Nothing More" ($50-100M ARR, $2-3B)**
+
+Sandstone wins intake/triage but fails to expand into contracts, matter management, or spend. Ironclad adds AI-powered intake and captures the "full stack" buyer. Sandstone becomes a point solution, not a platform.
+
+**Analog: Jira** — incredible issue tracker, but Atlassian needed Confluence, Bitbucket, Trello, and Loom to become $50B+. Standalone Jira = $3-5B company.
+
+---
+
+**Scenario 2: "Won Mid-Market, Lost Enterprise" ($100-200M ARR, $3-5B)**
+
+Sandstone dominates 5-20 person legal teams at mid-market companies but F500 legal departments choose Ironclad + Harvey + CounselLink. Enterprise needs SOC 2, FedRAMP, customization. Mid-market ACV stuck at $30-80K.
+
+**Analog: Gusto** — dominates SMB payroll/HR but can't crack enterprise (Workday, ADP). Great $10B company but structurally capped vs. Workday at $75B.
+
+---
+
+**Scenario 3: "Category Convergence" ($80-150M ARR, $2-4B)**
+
+Legal AI becomes table-stakes. Ironclad adds AI agents. Harvey adds in-house features. Legora Portal connects firms to in-house. Every tool does intake + contracts + AI. Feature convergence kills differentiation.
+
+**Analog: CRM wars of the 2000s.** Salesforce won because of platform + ecosystem. Everyone else became $1-5B outcomes.
+
+---
+
+**Scenario 4: "AI Model Layer Disruption" ($30-80M ARR, $1-2B)**
+
+Anthropic's Claude Cowork or OpenAI ships legal-specific agents. Foundation model providers offer 80% of functionality at near-zero cost. Sandstone's AI is Claude/GPT under the hood — no proprietary model. Already happening: Anthropic's Feb 3 legal plugin launch → Thomson Reuters -16%, RELX -15% in a day.
+
+**Analog: Dropbox** — great product on AWS S3. Then Apple, Google, Microsoft shipped native alternatives. $12B peak → ~$8B, structurally capped.
+
+---
+
+### The Critical Variables (What to Watch)
+
+| Variable | $10B+ Signal | $2-4B Signal |
+|----------|-------------|--------------|
+| **NRR** | >140% (aggressive expansion) | 110-120% (staying but not growing) |
+| **Enterprise penetration** | 10+ F500 logos in first 2 years | Stuck in mid-market after 3 years |
+| **Module adoption** | 60%+ customers using 3+ modules | Most customers only using intake |
+| **ACV trajectory** | Landing at $50K, expanding to $200K+ | Stuck at $30-50K |
+| **Competitive response** | Ironclad can't replicate the workflow layer | Ironclad ships "Ironclad Intake" |
+| **AI moat** | Proprietary playbook data creates defensibility | AI features are commodity |
+| **Anthropic/OpenAI** | Foundation models stay as infrastructure | Foundation models ship application layer |
+
+---
+
+### Probability Distribution
+
+| Outcome | Valuation | Probability |
+|---------|-----------|-------------|
+| Fails / acqui-hire | <$500M | 15% |
+| Solid point solution | $1-2B | 25% |
+| Strong vertical SaaS | $2-4B | 30% |
+| Category-defining platform | $5-10B | 20% |
+| Generational company ("Salesforce for Legal") | $10B+ | 10% |
+
+**Expected value: ~$3-4B** — excellent seed-stage outcome on a $10M raise.
+
+The difference between $3B and $10B+ comes down to one question: **Can Sandstone make the leap from "best intake tool" to "legal operating system" before the market converges?**
+
+The 18-month window from now (March 2026) to mid-2027 is when this question gets answered. 140%+ NRR, multi-module adoption, and enterprise traction = $10B path opens. Still primarily an intake tool at $50M ARR = ceiling crystallizes at $2-4B.
+
+---
+
+### Q5 Sources
+- [Sacra: Harvey at $195M ARR](https://sacra.com/research/harvey-at-195m-arr/)
+- [TechCrunch: Harvey Raising at $11B Valuation](https://techcrunch.com/2026/02/09/harvey-reportedly-raising-at-11b-valuation-just-months-after-it-hit-8b/)
+- [Ironclad Surpasses $200M ARR](https://www.prnewswire.com/news-releases/ironclad-surpasses-200-million-in-annual-recurring-revenue-entering-a-new-phase-of-ai-growth-302686054.html)
+- [Sacra: Ironclad at $150M ARR](https://sacra.com/research/ironclad-at-150m-arr/)
+- [ServiceNow: Scaling to $10B in ARR](https://alexandre.substack.com/p/servicenow-scaling-to-10bn-in-arr)
+- [SaaStr: Procore's $10M to $1B Playbook](https://www.saastr.com/the-10m-to-1b-vertical-saas-playbook-key-lessons-from-procores-chief-product-officer-wyatt-jenkins/)
+- [SaaStr: Veeva's Early Days to $100M ARR](https://www.saastr.com/the-early-days-veeva-hitting-100m-arr-with-just-3m-raised-and-a-deep-vertical-focus/)
+- [Axiom: 2026 In-House Legal Budgeting Survey](https://www.axiomlaw.com/resources/articles/legal-budgeting-survey-report)
+- [Grand View Research: US Legal Services Market](https://www.grandviewresearch.com/industry-analysis/us-legal-services-market-report)
+- [Bessemer: Ten Lessons from Vertical Software Investing](https://www.bvp.com/atlas/ten-lessons-from-a-decade-of-vertical-software-investing)
+- [Implicator.ai: Legora and the 260x Question](https://www.implicator.ai/legora-and-the-260x-question/)
