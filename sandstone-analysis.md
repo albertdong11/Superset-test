@@ -1542,3 +1542,114 @@ Growth velocity in the next 12-18 months is existential. The product needs to ac
 - [Artificial Lawyer: Anthropic Moves Into Legal Tech](https://www.artificiallawyer.com/2026/02/02/anthropic-moves-into-legal-tech/)
 - [Onit/SimpleLegal: AskAI](https://www.newswire.com/news/onit-introduces-askai-to-transform-legal-spend-analysis-and-streamline-22564413)
 - [Harvey AI: Custom Legal Models](https://openai.com/index/harvey/)
+
+---
+
+## Q10: Decision Benchmarks vs. Contract Benchmarks — What "Upstream" Means and Why It Matters
+
+### The Core Distinction
+
+**Contract benchmarks** measure *what the text of a contract says*. They answer: "Is this clause standard or unusual compared to other contracts?"
+
+**Decision benchmarks** measure *what lawyers actually do and why*. They answer: "Given this situation, what do lawyers at companies like yours typically decide — and what were the business drivers behind those decisions?"
+
+These are fundamentally different data assets with different value propositions.
+
+### Contract Benchmarks: What They Look Like
+
+Companies like **Ironclad**, **TermScout**, and **Law Insider** have built contract benchmarking capabilities:
+
+- **Ironclad** processes 1B+ contracts and can tell you: "This indemnification clause is more aggressive than 73% of similar clauses in SaaS vendor agreements"
+- **TermScout** extracts 750+ data points per contract and scores clauses on a fairness scale: "This limitation of liability scores 62/100 for buyer-friendliness"
+- **Law Insider** indexes millions of public SEC filings and can show you: "Here are 50 examples of how other companies wrote this exact clause type"
+
+These are valuable — they tell you whether your contract language is market-standard. But they only see the **output** (the signed contract), not the **process** that produced it.
+
+### Decision Benchmarks: What Sandstone Captures
+
+Sandstone sits at the point where business teams request legal help and lawyers make decisions. It captures:
+
+**Example scenario**: A sales rep submits a $500K SaaS deal with a prospect who wants uncapped liability.
+
+*What Ironclad/TermScout would tell you:*
+> "Uncapped liability appears in 12% of SaaS vendor agreements. This is outside market norms. Here are 20 example clauses with caps."
+
+*What Sandstone would tell you:*
+> "For deals $250K-$750K in your industry, lawyers approve uncapped liability 8% of the time. When they do, it's typically because: (a) the customer is a Fortune 500 account worth $2M+ in pipeline (60% of cases), (b) the deal includes offsetting insurance requirements (25%), or (c) the sales VP escalated and GC approved as strategic exception (15%). Average turnaround for this decision type: 3.2 days. Companies that approve uncapped liability at this rate see no measurable increase in claims."
+
+The difference is night and day. Contract benchmarks tell you what's normal in contract text. Decision benchmarks tell you what's normal in lawyer behavior — with the business context that explains *why*.
+
+### What "Upstream" Means
+
+Think of the legal request lifecycle as a pipeline:
+
+```
+UPSTREAM (Sandstone captures here)
+│
+│  Step 1: Business team has a need
+│     "Sales wants to close a deal with modified terms"
+│
+│  Step 2: Request enters legal intake
+│     Sandstone captures: who requested, what they need, urgency, deal value
+│
+│  Step 3: Lawyer triages and decides approach
+│     Sandstone captures: risk assessment, playbook position, escalation path
+│
+│  Step 4: Lawyer negotiates/approves/rejects
+│     Sandstone captures: what was approved, conditions, reasoning, time taken
+│
+│  ─── HANDOFF POINT ───
+│
+│  Step 5: Contract is drafted/redlined in CLM
+│     Ironclad captures: clause text, redline history, execution status
+│
+│  Step 6: Contract is signed and stored
+│     Ironclad captures: final terms, counterparty, dates
+│
+│  Step 7: Contract is managed through lifecycle
+│     Ironclad captures: renewals, amendments, obligations
+│
+DOWNSTREAM (Ironclad captures here)
+```
+
+"Upstream" means Sandstone captures data at the **origin of the request** — before a contract even exists. By the time Ironclad sees the contract at Step 5, all of the decision context (why this approach was chosen, what alternatives were considered, what the business justification was) is lost.
+
+### Why Upstream Intelligence Is More Valuable
+
+**1. Context makes data prescriptive, not just descriptive**
+
+Contract benchmarks are descriptive: "Here's what contracts look like." Decision benchmarks are prescriptive: "Here's what you should do, based on what similar companies in similar situations actually did." The business context (deal size, customer importance, risk tolerance, industry) transforms raw data into actionable recommendations.
+
+**2. Decision data explains "why," not just "what"**
+
+Knowing that 73% of SaaS contracts cap liability at 12 months of fees is interesting. Knowing that legal teams approve uncapped liability 8% of the time and that those exceptions correlate with 3x larger deal sizes and Fortune 500 accounts — that's intelligence that changes behavior.
+
+**3. Upstream captures non-contract work**
+
+Not everything legal does results in a contract. Compliance questions, regulatory interpretations, policy decisions, employment issues, IP assessments — these never enter a CLM system. Sandstone captures the full spectrum of legal decision-making because it sits at the intake layer, not the contract layer. This is potentially 40-60% of legal department workload that's invisible to Ironclad.
+
+**4. Higher frequency, more data points**
+
+A single deal might generate one contract (Ironclad sees this) but 5-15 legal interactions (Sandstone sees all of these). The request, the triage, the back-and-forth with the business team, the escalation to senior counsel, the policy exception approval — each interaction is a data point about how the legal team operates.
+
+### Why This Creates Defensibility
+
+**Ironclad moving upstream is architecturally hard.** Their entire product is built around contract documents as the unit of work. Adding intake and triage means rebuilding their data model, UI, and workflow engine around a fundamentally different object (requests/decisions vs. documents/clauses). It's like asking Salesforce to become Slack — technically possible, but it means competing against your own product architecture.
+
+**Sandstone moving downstream is architecturally easier.** Once you have the decision context and the approved terms, generating or populating a contract is a natural extension. Sandstone doesn't need to replace Ironclad — it can integrate with it and own the intelligence layer while Ironclad handles document execution. But it *could* move downstream if it chose to, because the decision data is the harder asset to build.
+
+This is the same dynamic that made Figma powerful: Figma captured the design *process* (collaboration, iteration, feedback, decisions), while competitors only captured the design *output* (final files). The process data was more valuable because it explained how teams actually work, not just what they produced.
+
+### The Intelligence Flywheel
+
+The upstream position creates a compounding advantage:
+
+1. **More requests processed** → more decision patterns captured
+2. **More decision patterns** → better recommendations for similar situations
+3. **Better recommendations** → faster lawyer decisions, more requests routed through Sandstone
+4. **Faster decisions** → business teams route more work through legal (increasing volume)
+5. **More volume** → richer cross-company benchmarks as pattern library grows
+
+Each cycle makes the decision benchmark data more valuable and harder to replicate. A competitor would need to convince thousands of legal teams to route their intake through a new system and wait months/years for the pattern library to build — while Sandstone's library compounds daily.
+
+This is why the data moat discussion (Q9) emphasized speed of customer acquisition. Every day Sandstone processes legal requests is a day of decision data that no competitor can retroactively capture. Contract text can be scraped from SEC filings. Decision context is proprietary and only exists if you were there when the decision was made.
