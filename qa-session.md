@@ -325,3 +325,170 @@ This is fundamentally different from a CLM tool like Ironclad, which stores cont
 - [Fortune Business Insights: Legal Technology Market](https://www.fortunebusinessinsights.com/legal-technology-market-109527)
 - [Grand View Research: U.S. Legal Technology Market](https://www.grandviewresearch.com/industry-analysis/us-legal-technology-market-report)
 - [Mordor Intelligence: Legal Tech Market](https://www.mordorintelligence.com/industry-reports/global-legal-tech-market)
+
+---
+
+## Q3: Where Is Legora Today?
+
+### The Short Answer
+
+Legora (formerly Leya) is the fastest-growing company in legal AI and **YC's fastest-ever unicorn**. In under 2 years, they've gone from a Stockholm-based seed-stage startup to a company raising at a **$5B+ valuation** with ~$23M ARR. The growth is real, but the valuation is eye-watering — and there are serious structural risks underneath the headline numbers.
+
+---
+
+### The Timeline (Speed Is the Story)
+
+| Date | Event | Valuation |
+|------|-------|-----------|
+| **2023** | Founded in Stockholm by Max Junestrand (YC alum) | — |
+| **May 2024** | $10.5M Seed | — |
+| **Jul 2024** | $25M Series A | — |
+| **Feb 2025** | Rebrands from Leya → Legora, launches agentic research + Word add-in | — |
+| **May 2025** | $80M Series B (ICONIQ, General Catalyst, Redpoint, Benchmark, YC) | **$675M** |
+| **Oct 2025** | $150M Series C (Bessemer, ICONIQ, General Catalyst, YC) | **$1.8B** |
+| **Nov 2025** | Launches Legora Portal (law firm ↔ in-house collaboration) | — |
+| **Feb 2026** | In talks for $400M raise (Accel participating) | **$5B+** |
+
+**Total raised: ~$265M+ (with $400M potentially incoming = $665M)**
+
+That's a **7.4x valuation jump in 9 months** ($675M → $5B). Seed to unicorn in ~18 months. This is venture capital hypergrowth at its most aggressive.
+
+---
+
+### The Product Today
+
+Legora is an **AI workspace for lawyers** — primarily targeting **law firms** (not in-house teams, which is Sandstone's lane). Core product:
+
+1. **Legal Research & Analysis** — Ask questions across uploaded documents. The AI generates answers with citations and source references. Agentic research workflows that can chain multiple analytical steps.
+
+2. **Document Review (Tabular Review)** — Upload hundreds/thousands of documents (think due diligence data rooms). Run parallel prompts across all of them. Tag, categorize, and extract structured data at scale.
+
+3. **Drafting & Word Add-in** — AI-assisted drafting directly inside Microsoft Word via a sidebar. Precedent-based drafting using the firm's own document history.
+
+4. **Legora Portal (NEW — Q1 2026 GA)** — This is the big strategic bet. Portal lets law firms **productize their expertise** and deliver it to in-house clients:
+   - Law firms build custom AI workflows (contract review playbooks, due diligence checklists, research workflows) and share them with clients
+   - In-house teams access firm-specific expertise through a secure workspace
+   - Real-time collaboration on tabular reviews and documents
+   - Design partners include **Linklaters, Cleary Gottlieb, Goodwin, Deloitte, Bird & Bird**
+
+**Why Portal matters:** It turns Legora from a tool lawyers use into a **platform that connects law firms to their clients**. That's a network effect play — the more firms on Legora, the more in-house teams get pulled in, and vice versa.
+
+---
+
+### The Numbers (Impressive Growth, Extreme Valuation)
+
+| Metric | Value | Context |
+|--------|-------|---------|
+| **ARR** | ~$23M | 6x increase over prior period |
+| **Target ARR** | ~$40M (2026) | ~74% YoY growth |
+| **Customers** | 400+ | Up from 250 in May 2025 |
+| **Markets** | 40+ countries | Up from 20 in May 2025 |
+| **Team** | ~200 people | Plans to double by end of 2026 |
+| **Valuation** | $5B+ (in talks) | 260x ARR multiple |
+| **Total funding** | ~$265M+ | Potentially $665M with new round |
+
+**The 260x question:** At $23M ARR and a $5B+ valuation, Legora trades at roughly **260x revenue**. For context:
+- The richest public SaaS companies rarely exceed 30x
+- Harvey: ~$190M ARR at ~$11B valuation = **58x**
+- Even at the peak of the 2021 SaaS bubble, multiples rarely exceeded 60-80x
+
+This valuation only makes sense if you believe Legora can reach **$100M+ ARR within 2 years** and sustain a premium multiple — which would still imply 50x at $5B.
+
+---
+
+### Legora vs. Harvey (The Legal AI War)
+
+These are the two clear leaders, but they look very different:
+
+| Dimension | Legora | Harvey |
+|-----------|--------|--------|
+| **Valuation** | ~$5B (in talks) | ~$11B |
+| **ARR** | ~$23M | ~$190M |
+| **Revenue multiple** | ~260x | ~58x |
+| **Geographic strength** | Europe (Stockholm HQ) | U.S. BigLaw |
+| **U.S. ARR** | Only ~$1M (as of Sep 2025) | Dominant |
+| **Primary buyer** | Mid-market law firms, expanding to BigLaw | Am Law 100 / elite firms |
+| **Product focus** | Workspace (research, review, drafting, Portal) | Multi-practice research + workflows |
+| **Key clients** | Linklaters, White & Case, Cleary, Goodwin | Elite U.S. firms |
+| **AI dependency** | Anthropic Claude (no proprietary models) | Multi-model |
+| **Founded** | 2023 | 2022 |
+
+**Critical gap:** Only **$1M of Legora's $23M ARR comes from the U.S.** This is a massive vulnerability. American BigLaw is the highest-margin, highest-spend legal market in the world. Harvey owns it. Legora has barely cracked it.
+
+---
+
+### Why Legora Grew So Fast
+
+1. **Europe was underserved.** Harvey focused on U.S. BigLaw. European firms were hungry for legal AI and Legora was there first with a localized, multi-jurisdictional product.
+
+2. **The Word add-in was brilliant.** Lawyers live in Microsoft Word. Legora met them where they are instead of asking them to switch to a new interface. Low friction adoption.
+
+3. **Document review at scale is an immediate ROI.** Due diligence on a large M&A deal might require reviewing 10,000+ documents. Legora's tabular review automates this. The ROI is obvious and quantifiable — saves hundreds of associate hours per deal.
+
+4. **Portal creates a network pull.** Once a law firm builds workflows in Legora Portal and shares them with clients, both sides are locked in. This is the play that justifies the valuation premium — if it works.
+
+5. **YC + tier-1 investor signaling.** Bessemer, ICONIQ, General Catalyst, Benchmark, Redpoint — this investor syndicate creates a self-reinforcing cycle of credibility and access.
+
+---
+
+### The Structural Risks (Why the Bear Case Is Real)
+
+**1. The Anthropic supplier problem**
+
+On February 3, 2026, Anthropic launched **legal-specific Claude Cowork plugins** — essentially competing directly with Legora. The market reaction was brutal:
+- Thomson Reuters stock: **-16% in a single day**
+- RELX/LexisNexis: **-15%**
+- $300B+ evaporated from the legal/info-services sector
+
+Legora depends entirely on Anthropic's Claude models. **Their supplier became their competitor.** If Anthropic ships 80% of Legora's functionality at 20% of the cost, Legora's "last-mile" customization layer becomes very thin.
+
+**2. The 260x multiple requires perfection**
+
+At $5B on $23M ARR, there is zero room for execution stumbles. If growth slows from 6x to 2x, or if U.S. expansion stalls, the valuation compresses violently. This is a "grow into the valuation or die" situation.
+
+**3. U.S. market penetration is barely started**
+
+$1M ARR in the U.S. against Harvey's $190M. Legora opened a New York office, but cracking U.S. BigLaw means competing against Harvey's entrenched relationships, deeper pockets, and 8x more revenue.
+
+**4. Law firm incentive misalignment**
+
+The billable hour model creates perverse incentives. AI tools that make lawyers more efficient... reduce billable hours... reduce revenue. A 2025 AffiniPay survey found **only 21% of law firms had adopted AI at the firm level, down from 24% the prior year.** Adoption is actually *declining* by some measures.
+
+**5. The Robin AI cautionary tale**
+
+Robin AI, a London-based legal AI competitor with prominent backers, **collapsed in late 2025** after missing a $50M funding target. Legal AI is not immune to startup mortality, even with strong investors.
+
+**6. Accuracy concerns**
+
+A Stanford study found **17-34% hallucination rates** in incumbent legal AI tools. Legora hasn't published comparable accuracy benchmarks. In a profession where precision is existential, this is a real issue.
+
+---
+
+### What This Means for Sandstone
+
+Legora and Sandstone are actually **complementary, not competitive** — at least today:
+
+| Dimension | Legora | Sandstone |
+|-----------|--------|-----------|
+| **Primary buyer** | Law firms | In-house legal teams |
+| **Core use case** | Research, review, drafting | Intake, triage, workflow orchestration |
+| **Value prop** | Make lawyers faster | Make legal departments run better |
+| **Revenue model** | Per-seat to lawyers | Platform fee to legal departments |
+
+**But Portal changes this.** Legora Portal explicitly bridges law firms to in-house teams. If Portal succeeds, Legora starts encroaching on Sandstone's territory from the law firm side. The collision point is: **who owns the in-house legal team's daily workflow?** Sandstone from the inside (intake/triage), or Legora from the outside (via law firm collaboration)?
+
+This is the dynamic to watch. Sandstone needs to establish itself as the in-house system of record before Legora's Portal pulls in-house teams into the Legora ecosystem through their outside counsel relationships.
+
+---
+
+### Q3 Sources
+- [SiliconANGLE: Legora Raises $150M at $1.8B Valuation](https://siliconangle.com/2025/10/30/legaltech-ai-startup-legora-raises-150m-1-8b-valuation/)
+- [BusinessWire: Legora Series C Announcement](https://www.businesswire.com/news/home/20251030974157/en/Legora-Raises-$150-Million-Series-C-to-Accelerate-Global-Rollout-of-Its-AI-Platform-for-Legal-Professionals)
+- [TechFundingNews: YC's Fastest Unicorn Eyes $4B Valuation](https://techfundingnews.com/ycs-fastest-unicorn-eyes-4b-valuation/)
+- [Implicator.ai: Legora and the 260x Question](https://www.implicator.ai/legora-and-the-260x-question/)
+- [PitchBook: Legal AI Wars — Harvey, Legora](https://pitchbook.com/news/articles/legal-ai-war-harvey-legora-new-funding)
+- [Legora: Portal Announcement](https://legora.com/newsroom/portal-announcement)
+- [Artificial Lawyer: Legora Launches Client Collaboration Portal](https://www.artificiallawyer.com/2025/11/07/legora-launches-client-collaboration-portal-al-interview/)
+- [White & Case: Global Rollout of Legora](https://legora.com/newsroom/white-case-announces-global-rollout-of-legora-across-43-offices)
+- [BusinessWire: Leya Rebrands as Legora](https://www.businesswire.com/news/home/20250219690496/en/Top-Legal-AI-Platform-Leya-Rebrands-as-Legora-Unveils-Agentic-Research-and-Product-Upgrades)
+- [Legal.io: Legora Series C Coverage](https://www.legal.io/articles/5751481/Legora-Raises-150M-Series-C-as-Legal-AI-Funding-Surge-Continues)
