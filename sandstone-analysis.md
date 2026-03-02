@@ -2423,3 +2423,127 @@ Every option listed — GC buy-in, logos, deep proof, data — is correct as a p
 The mistake most enterprise startups make at seed stage is trying to do all of them simultaneously. They spread across 50 accounts, produce mediocre results at all of them, generate no compelling case studies, burn their seed on broad outbound, and end up with a 24-month-old company that has lots of logos and no proof.
 
 The Sequoia playbook: **go narrow and deep first, then expand from proven strength.** The 20+ GC investors are the unfair advantage — not just checks, but deployment sites, referral sources, and credibility anchors. Make their deployments flawless. Then let them tell the story.
+
+---
+
+## Q18: Bottom-Up Math to $10B — What Needs to Be True
+
+### The Valuation Equation
+
+| Path | ARR Required | Multiple | Precedent |
+|---|---|---|---|
+| High-growth private | $500M ARR | 20x | Harvey ($195M ARR → $11B at ~56x, peak hype) |
+| Growth-stage IPO | $700M ARR | 15x | ServiceNow at IPO: $243M rev, 12x |
+| Mature high-growth IPO | $1B ARR | 10x | Standard for 25%+ growth SaaS |
+| **Realistic target** | **$600-800M ARR** | **13-17x** | Median for 30%+ growth SaaS at IPO |
+
+**Target: $750M ARR at 15x = $11.25B.**
+
+### Path 1: Mid-Market Dominant (Base Case)
+
+Primary customer: 5-15 lawyer teams at $200M-$2B companies. ACV starts $50K, expands to $120K. NRR: 135%.
+
+| Year | New Customers | Total | Avg ACV | NRR Expansion | ARR |
+|---|---|---|---|---|---|
+| **2026** (seed) | 75 | 75 | $50K | — | $3.75M |
+| **2027** (A) | 200 | 275 | $55K | +$5.1M | $16.1M |
+| **2028** (B) | 400 | 675 | $65K | +$21.7M | $49.6M |
+| **2029** | 600 | 1,275 | $75K | +$67.0M | $112M |
+| **2030** | 800 | 2,075 | $85K | +$151.2M | $226M |
+| **2031** | 1,000 | 3,075 | $95K | +$305.1M | $420M |
+| **2032** | 1,000 | 4,075 | $100K | +$567.0M | $700M+ |
+
+Requires: 4,000+ customers, ACV growth from $50K to $120K+, 135% NRR, 600-1,000 net new customers/year at maturity, gross churn under 8%.
+
+Addressable pool: ~25,000-40,000 mid-market US companies with 3+ lawyer teams. Capturing 4,000 (10-16%) in 7 years is aggressive but precedented (Ironclad: 2,000+ in 10 years).
+
+### Path 2: Mid-Market + Enterprise (Upmarket Push)
+
+| Segment | Customers | Avg ACV | Segment ARR |
+|---|---|---|---|
+| SMB (1-3 lawyers) | 2,000 | $25K | $50M |
+| Mid-market (5-15 lawyers) | 2,500 | $100K | $250M |
+| Enterprise (15-50+ lawyers) | 500 | $400K | $200M |
+| Strategic (Fortune 500) | 75 | $1M+ | $75M+ |
+| Data/benchmarks add-on | 3,000 | $25K | $75M |
+| Partner/channel | — | — | $100M |
+| **Total** | **~5,075** | **~$148K** | **$750M** |
+
+Requires: 500 enterprise accounts at $400K (30-50 enterprise AEs), 75 Fortune 500 at $1M+ (multi-year contracts), data add-on that 3,000+ customers pay for, partner ecosystem (Deloitte, EY, Accenture legal ops).
+
+### Path 3: Platform + Data Network (Moonshot)
+
+| Revenue Stream | ARR |
+|---|---|
+| Platform (workflow/modules) | $450M |
+| Decision intelligence (benchmarks, recommendations) | $187.5M |
+| Marketplace/ecosystem (outside counsel, vendor market, API) | $112.5M |
+| **Total** | **$750M** |
+
+Intelligence revenue ($187.5M) requires 7,500+ customers at $25K/year intelligence add-on. No legal tech company has built data network revenue at this scale. This is the 10+ year path.
+
+### The Critical Variable: NRR
+
+| NRR | $3.75M ARR (Y1) compounds to in Year 7 | Expansion from Y1 alone |
+|---|---|---|
+| 110% | $7.3M | $3.6M |
+| 120% | $13.4M | $9.7M |
+| **135%** | **$28.9M** | **$25.2M** |
+| 150% | $62.3M | $58.6M |
+
+At 135% NRR, every dollar acquired is worth ~8x in 7 years from expansion alone. At 110%, less than 2x. NRR is the difference between $3B and $10B+.
+
+**135% NRR requires:**
+- 2-3 additional modules adopted within 24 months
+- Seat growth as legal teams grow
+- Usage-based pricing that scales with company size
+- Data/intelligence add-ons on top of platform fees
+- 3-5% annual price increases that stick due to switching costs
+
+### Non-Negotiable Requirements
+
+**1. Ship 4-5 product modules (not just intake)**
+
+Single-module company maxes at ~$3B. The math requires:
+- Module 1: Intake & triage ($15-25K) — shipped
+- Module 2: Contract playbooks & drafting ($15-25K) — must ship Q4 2026
+- Module 3: Matter management ($15-25K) — must ship 2027
+- Module 4: Legal spend analytics ($10-20K) — must ship 2028
+- Module 5: Decision intelligence ($20-30K) — must ship 2028-2029
+
+Full-stack customer pays $75-125K/year. This drives ACV from $50K → $120K+ and NRR to 135%.
+
+**2. Enterprise must work**
+
+Mid-market alone maxes at ~$400M ARR (4,000 × $100K). Need 500+ enterprise at $250K-$1M to bridge to $750M. Requires implementation team, SOC 2/ISO 27001, custom integrations, multi-region, executive sponsorship beyond the GC.
+
+**3. Gross margins above 75%**
+
+At $750M ARR with 75%+ margins = $560M+ gross profit. Funds $200M+ sales org with operating leverage. If AI inference costs eat margins, the math breaks. Must negotiate Anthropic volume discounts, build proprietary fine-tuned models for routine tasks, or pass AI costs through via usage pricing.
+
+**4. Market size must hold**
+
+Model assumes 25,000-40,000 addressable US companies. If only 15,000, caps at ~$400M domestically. International becomes mandatory.
+
+**5. No platform disruption from foundation models**
+
+If Anthropic/OpenAI/Microsoft ship "good enough" workflow bundled with enterprise subscriptions, market compresses. Unlikely per Q14 analysis, but not impossible.
+
+### Summary: Scenario Outcomes
+
+| Scenario | Customers | ACV | ARR | Multiple | Valuation |
+|---|---|---|---|---|---|
+| **Bear: Good intake tool** | 2,000 | $80K | $160M | 10x | **$1.6B** |
+| **Base: Multi-module platform** | 4,000 | $120K | $480M | 12x | **$5.8B** |
+| **Bull: Platform + data** | 5,000+ | $150K | $750M | 15x | **$11.25B** |
+| **Moon: Legal OS** | 7,000+ | $180K | $1.26B | 12x | **$15B+** |
+
+**To reach $10B+, ALL must be true simultaneously:**
+1. 4,000+ customers (mid-market AND enterprise)
+2. $120K+ blended ACV (4-5 shipped modules customers actually buy)
+3. 135%+ NRR (expansion from intake → contracts → matter mgmt → spend → intelligence)
+4. 75%+ gross margins (managed AI costs)
+5. Data/intelligence as revenue stream (network effects from customer density)
+6. 7-8 years of execution without major competitive disruption
+
+Miss any one and you're more likely $2-5B. Still extraordinary from $10M seed — but not the $10B+ Sequoia is underwriting.
