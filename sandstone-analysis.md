@@ -2853,3 +2853,115 @@ Sandstone doesn't need Dev Mode per-seat pricing. It needs **three monetization 
 - [The Lawyer: Over 20 GCs Back Sandstone](https://www.thelawyer.com/over-20-gcs-back-legal-tech-firm-sandstone-in-10m-fundraise/)
 - [Sequoia: Partnering with Sandstone](https://sequoiacap.com/article/partnering-with-sandstone-an-ai-native-platform-for-in-house-legal-teams/)
 - [DNYUZ/Fortune: McKinsey Consultant to Sequoia-Backed Startup](https://dnyuz.com/2026/01/13/this-consultant-advised-big-law-at-mckinsey-now-sequoia-is-backing-his-ai-startup-for-in-house-lawyers/)
+
+---
+
+## Q22: The Full Product Roadmap — From Triage to $10B Legal Operating System
+
+### What's Actually Shipped vs. Vision (March 2026)
+
+**Live and in use:** Unified intake inbox (Slack, email, Salesforce, Ironclad, Jira, ServiceNow), request classification and routing, work tracking dashboards, basic playbook/precedent organization, first-pass redlining (NDAs), historical negotiation data surfacing, core integrations.
+
+**Early / partially built:** AI auto-resolution agents (targets 60-80% but aspirational), dynamic self-learning playbooks, playbook marketplace.
+
+**Clearly roadmap:** HR/Marketing/Sales automation, compounding intelligence, autonomous agents, meeting notes/ERP integration, CLM replacement.
+
+Even customer testimonials use future tense — Ucci: "Sandstone **will** completely rewire." Product is real but early. Module 1 of a 7-module journey.
+
+### The 7 Modules to $10B
+
+**MODULE 1: Intake & Triage — SHIPPED**
+ACV: $15-25K. Displaces: nothing (63% have no intake system). The front door — every subsequent module depends on owning where all legal work enters. Also the data capture layer.
+
+**MODULE 2: Contract Playbooks & Drafting — Must ship Q3-Q4 2026**
+ACV: $15-25K. Displaces: manual Word/email redlining, GC AI for redlining, Ironclad AI Assist. Transforms static playbooks into AI-powered decision engines: identifies contract type and counterparty, pulls playbook positions, generates first-pass draft/redline, flags deviations vs. auto-approves "green zone" terms. Without this, GCs say "you organized my inbox but I still need GC AI for actual work." With it, Sandstone becomes request → triage → draft → review → approve. Captures: clause-level decisions, playbook adherence, counterparty negotiation behavior. Foundation for decision benchmarks.
+
+**MODULE 3: Matter Management — Must ship H1 2027**
+ACV: $15-25K. Displaces: Mitratech TeamConnect (~$315M rev, enterprise, aging), LawVu ($42.5M raised), spreadsheets (most mid-market). Tracks ALL legal work beyond contracts: litigation, regulatory, employment, IP, M&A, governance, compliance. Makes Sandstone the system of record. Critical: 40-60% of legal workload never touches a CLM. Sandstone's AI auto-creates matters from intake, pre-populates from context (Salesforce, HRIS). Captures: full lifecycle data across all work types, utilization, turnaround by matter type.
+
+**MODULE 4: Legal Spend Management — Must ship H2 2027 - H1 2028**
+ACV: $10-20K. Displaces: BrightFlag (acquired by Wolters Kluwer, €425M), Onit/SimpleLegal (3,000+ customers), spreadsheets. Outside counsel invoice review, budget tracking, vendor performance analytics, rate benchmarking, spend forecasting. **The CFO becomes a buyer** — different budget, additive ACV. Mid-market spends $2-10M/year on legal; 5% savings = $100-500K. Captures: outside counsel rates, matter-level spend, vendor performance — premium cross-company data.
+
+**MODULE 5: Knowledge Management & Institutional Memory — Must ship 2028**
+ACV: $10-15K. Displaces: iManage, SharePoint, Practical Law (Thomson Reuters, ~$1B+ revenue), "ask the senior associate." Clause libraries, precedent decisions, regulatory interpretations, policy guidance, natural language queries against all institutional knowledge. The compounding intelligence module. Deepest lock-in: you can switch intake tools, you cannot switch institutional memory. Key advantage: if Modules 1-4 work, knowledge capture is automatic — every decision is indexed as a byproduct of doing work. No manual entry. Captures: the complete institutional knowledge graph.
+
+**MODULE 6: Decision Intelligence & Benchmarking — Must ship 2028-2029**
+ACV: $20-30K. Displaces: nothing — this category doesn't exist. Internal benchmarks ("your NDA turnaround vs. peers"), cross-company benchmarks ("software companies auto-resolve 65% of NDAs, you're at 40%"), predictive analytics ("this counterparty will push back on indemnity"), GC dashboards, board-ready reporting. The network effect module — requires 500+ customers with 12+ months of data. Greenfield category with highest willingness-to-pay. Captures: meta-data — patterns across patterns. The data moat.
+
+**MODULE 7: Ecosystem & Marketplace — Must ship 2029-2030**
+ACV: $15-25K + transaction fees. Displaces: Chambers/Legal 500 (with data-driven matching), manual RFPs, procurement consultants. Outside counsel marketplace (law firms bid, rated by performance data), legal service provider directory, template/playbook marketplace, API for law firms, deep partner integrations (DocuSign, Relativity, Diligent, Anaqua). The platform flywheel — revenue from outside the legal department budget. Requires 1,000+ customers for marketplace gravity.
+
+### How the Modules Connect
+
+```
+MODULE 1: INTAKE & TRIAGE (shipped)
+  "Every legal request enters here"
+         │
+         ▼
+MODULE 2: CONTRACT PLAYBOOKS (Q3-Q4 2026)
+  "AI drafts, redlines, routes contracts"
+         │
+         ▼
+MODULE 3: MATTER MANAGEMENT (H1 2027)
+  "Track all legal work, not just contracts"
+         │
+         ▼
+MODULE 4: LEGAL SPEND (H2 2027-H1 2028)
+  "Manage outside counsel and budgets"
+         │
+         ▼
+MODULE 5: KNOWLEDGE MANAGEMENT (2028)
+  "Institutional memory that compounds"
+         │
+         ▼
+MODULE 6: DECISION INTELLIGENCE (2028-2029)
+  "Cross-company benchmarks and predictions"
+         │
+         ▼
+MODULE 7: ECOSYSTEM & MARKETPLACE (2029-2030)
+  "Platform that third parties build on"
+```
+
+Each module: (1) adds ACV, (2) generates data that makes subsequent modules more valuable, (3) increases switching costs.
+
+### Revenue Build
+
+| Module | ACV Add | Adoption % | Revenue (5K customers) |
+|---|---|---|---|
+| 1. Intake & Triage | $15-25K | 100% | $75-100M |
+| 2. Contract Playbooks | $15-25K | 80% | $60-100M |
+| 3. Matter Management | $15-25K | 60% | $45-75M |
+| 4. Legal Spend | $10-20K | 40% | $20-40M |
+| 5. Knowledge Mgmt | $10-15K | 70% | $35-50M |
+| 6. Decision Intelligence | $20-30K | 30% | $30-45M |
+| 7. Ecosystem/Marketplace | $15-25K | 20% | $15-25M |
+| Volume pricing | $10-30K | 60% | $30-90M |
+| Business intel (CFO) | $15-30K | 40% | $30-60M |
+| **Mid-market subtotal** | | | **$340-585M** |
+| **Enterprise uplift** (500 @ 3-5x) | | | **+$200-350M** |
+| **Grand total** | | | **$540-935M** |
+
+At $750M ARR × 15x = **$11.25B.**
+
+### Critical Sequencing
+
+**Modules 1-3 = must-have core.** Intake + contracts + matter management cover 90%+ of daily work. Customer on all three pays $45-75K/year and is deeply embedded. Minimum viable platform with real switching costs.
+
+**Modules 4-5 = expansion layer.** Spend management and knowledge management drive NRR toward 135%. Upsell products, not essential for daily workflow.
+
+**Modules 6-7 = moat layer.** Decision intelligence and marketplace separate $3B from $10B+. Require scale (500-1,000+ customers) and time (3-5 years of data) but create near-irreplicable advantages.
+
+**The mistake to avoid:** Building Modules 4-7 before 1-3 are rock solid. Ship Module 2 (contracts) by Q4 2026 or the entire roadmap slips.
+
+---
+
+### Q22 Sources
+- [Sandstone Homepage & Blog](https://sandstone.com/)
+- [Sandstone: Context-First Legal Department](https://sandstone.com/blog/the-context-first-legal-department-cutting-the-ai-noise-and-solving-the-context-tax)
+- [Sandstone: Evolution of AI-Native Legal](https://sandstone.com/blog/the-evolution-of-the-ai-native-legal-department)
+- [Sandstone: Beyond Contract Review](https://sandstone.com/blog/beyond-contract-review-the-untapped-use-cases-for-legal-ai)
+- [Mitratech Products](https://mitratech.com/products/)
+- [BrightFlag Acquisition by Wolters Kluwer](https://www.wolterskluwer.com/en/news/wolters-kluwer-to-acquire-global-legal-software-provider-brightflag)
+- [LawVu Platform](https://lawvu.com/)
+- [CLOC Core 12 Competencies](https://cloc.org/cloc-core-12/)
+- [Streamline AI — Legal Tech Stack](https://www.streamline.ai/article/legal-tech-stack)
