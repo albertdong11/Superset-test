@@ -1973,3 +1973,105 @@ History suggests platforms eventually win in enterprise. But "eventually" can ta
 - [Bloomberg Law: Sequoia Leads Sandstone](https://news.bloomberglaw.com/legal-ops-and-tech/sequoia-leads-backing-of-ai-legal-technology-startup-sandstone)
 - [Sequoia: Partnering with Sandstone](https://sequoiacap.com/article/partnering-with-sandstone-an-ai-native-platform-for-in-house-legal-teams/)
 - [Gavel: GC AI Alternatives](https://www.gavel.io/resources/gc-ai-alternatives-best-ai-tools-for-in-house-counsel)
+
+---
+
+## Q13: Is GC AI Just Claude's Legal Plugin? And Is Sandstone's Real Value the Non-Legal User?
+
+### GC AI vs. Claude's Legal Plugin — The Overlap Is Enormous
+
+The Claude Cowork Legal Plugin (launched Feb 2, 2026) is an open-source system prompt + workflow maps layered on top of Claude, available to anyone with a **$20/month Claude Pro subscription**. It provides:
+- `/review-contract` — clause-by-clause analysis against a negotiation playbook
+- `/triage-nda` — categorizes NDAs as standard approval, counsel review, or full review
+- `/vendor-check` — evaluates vendor agreement protective provisions
+- `/brief` — generates legal briefings
+- `/respond` — templated responses for common inquiries
+
+It connects via MCP to Microsoft 365, Slack, Box, Jira. Compare to GC AI at **$500/month per seat**: chat-based legal Q&A, contract review, drafting, redlining, research, summarization, Microsoft Word plugin. The core interaction — lawyer opens chat, pastes document, gets AI-generated answer — is identical.
+
+The market noticed: Thomson Reuters lost 16.2% ($12.3B market cap), LegalZoom dropped 23.7%, broader legal SaaS sector fell 8-15%.
+
+**Where GC AI still differentiates:** verified citations (anti-hallucination pipeline), native .docx redlining with track changes, jurisdiction-specific logic, exportable audit trails, risk scoring, interest-adaptive drafting. These are real — but they're **features, not architecture**. Anthropic can and likely will close these gaps over time. GC AI's moat is a narrowing feature lead, not a compounding structural advantage.
+
+**The uncomfortable truth:** GC AI's $555M valuation is built on being the best AI chatbot for lawyers. Anthropic is giving away a decent version of that for $20/month.
+
+### Supporting the Assertion: Sandstone's Core Value Is the Non-Legal User
+
+**1. The math on who experiences the bottleneck**
+
+80-90%+ of legal department interactions originate from non-legal business teams. These people don't care about clause analysis quality. They care about one thing: **how fast does legal get back to me?**
+
+GC AI makes lawyers 20% faster at reviewing documents — instead of waiting 5 days for an NDA, business teams wait 4 days. Sandstone claims 60-80% auto-resolution and 72% reduction in NDA cycle time. For the sales rep, that's the difference between "I lost the deal waiting on legal" and "I got my NDA back in 2 hours."
+
+**2. The non-legal user surface area is 10-100x larger**
+
+A mid-market company has 3-10 lawyers and 500-5,000 employees. Every employee is a potential legal requestor. Sandstone's integration into Slack, email, and Salesforce means it touches the entire organization. This matters for pricing power (platform that 1,000 people interact with vs. tool that 5 lawyers use), stickiness (ripping out infrastructure vs. canceling a subscription), and data generation (1,000 requestors produce orders of magnitude more decision data than 5 lawyers chatting).
+
+**3. GC AI has literally zero interface for business teams**
+
+GC AI's tagline: "built by lawyers, for lawyers." It's a Word plugin and a chat window. Sales reps, HR managers, procurement leads have no way to interact with it. They still email legal@company.com and wait.
+
+Sandstone meets them in Slack, email, Salesforce, and procurement portals with self-service resolution, status visibility, and structured intake.
+
+**4. Claude's plugin proves the copilot layer is commodity — but doesn't touch the workflow layer**
+
+The Claude Legal Plugin proves "AI helps a lawyer review a contract" is a feature of a $20/month subscription. But it has no intake, no triage, no routing, no auto-resolution, no business system integrations, no institutional knowledge capture, no cross-department orchestration. It's stateless. Sandstone's value exists in a layer that neither Claude's plugin nor GC AI touches.
+
+**5. The "67% bypass" statistic reveals the real problem**
+
+An Onit/ELR report found 67% of employees have bypassed legal entirely even knowing it's against policy. They don't bypass because lawyers are slow at document work. They bypass because the process of engaging legal is too painful. GC AI doesn't fix this. Claude's plugin doesn't fix this. Sandstone directly addresses why they gave up.
+
+### Challenging the Assertion: Why This Might Be Wrong
+
+**1. Lawyers are still the budget holders**
+
+The GC signs the check. What GCs care about viscerally is *their* team's productivity and *their* ability to deliver quality legal work. "Your sales reps get NDAs faster" is a nice secondary benefit, but "your lawyers will be 3x more productive" is what gets the GC to pull out the corporate card. GC AI's pitch lands in the GC's self-interest. Sandstone's pitch requires the GC to think systemically — a harder cognitive leap.
+
+**2. Time savings for non-legal people only materializes at scale**
+
+Sandstone's 60-80% auto-resolution and 72% NDA cycle time reduction require months of playbook configuration, integration setup, and training data. During the first 30-60 days, the experience for business teams might actually be *worse* (new system, unfamiliar process, AI still learning). GC AI delivers value on day one — install the Word plugin, review a contract, save 30 minutes.
+
+**3. Many legal teams are too small for workflow to matter**
+
+A 2-person legal team at a 300-person startup doesn't need an operating system. They need their two lawyers to be faster. The overhead of intake workflows, playbooks, routing rules, and 30+ integrations is disproportionate to team size. This segment is large — the majority of companies have small legal teams. GC AI's 1,300+ customers include many of them.
+
+**4. Business teams might not care enough to change behavior**
+
+The 67% bypass rate cuts both ways. Yes, the process is broken. But business teams have adapted to working around legal. Introducing Sandstone means asking them to route through a new system — even if it's Slack-native and easy, it's still a behavior change. Some organizations may find that the current workaround (just get the VP to sign off) is "good enough."
+
+**5. The copilot layer might not be commodity yet**
+
+Real-world reports suggest Claude's Legal Plugin is "underwhelming" for production legal work — no anti-hallucination guarantees, no native document editing, no jurisdiction awareness, no audit trails. A GC who needs defensible, reliable AI output today still needs GC AI. The commoditization is directionally inevitable but not yet complete — GC AI may have 2-3 years of feature advantage.
+
+**6. Non-legal value depends on legal adoption first**
+
+Business teams only benefit from Sandstone if the legal team adopts it. But the legal team's immediate pain point is "I need help reviewing this contract" (GC AI solves today), not "I need to restructure how my department processes requests" (Sandstone's pitch). The non-legal value is a *consequence* of legal team adoption, not a *driver* of it.
+
+### Net Assessment
+
+**The assertion is strategically correct but commercially premature.**
+
+The non-legal user time savings IS Sandstone's most defensible and differentiated value — the thing neither GC AI, Claude's Legal Plugin, nor any copilot can replicate, because it requires workflow infrastructure and organizational adoption, not better prompts.
+
+But it's the harder thing to sell. The buyer (GC) has to think beyond their own team to the organization's systemic efficiency. That's a longer sales cycle, more complex implementation, and higher ROI bar.
+
+The strategic play is likely **wedge-then-expand**:
+1. **Land** with a pain point the GC feels personally — intake chaos ("you're drowning in unstructured Slack requests")
+2. **Show** quick wins the GC experiences directly (auto-triage, workload visibility, playbook enforcement)
+3. **Expand** to non-legal user value once the system is live ("your sales team's NDA turnaround dropped from 5 days to 4 hours, 65% of vendor intakes auto-resolve, and you didn't hire that extra lawyer you budgeted for")
+
+The non-legal time savings becomes the **retention and expansion moat**, not the initial sale. The GC buys Sandstone for themselves. They keep Sandstone because the entire organization depends on it.
+
+This is exactly the ServiceNow pattern: IT directors bought it to manage their own tickets. It stayed because every department submitted tickets through it. The departmental users didn't drive the purchase — they drove the lock-in.
+
+---
+
+### Q13 Sources
+- [Anthropic Claude Cowork Legal Plugin](https://claude.com/plugins/legal)
+- [LawNext: Anthropic's Legal Plugin — Opening Salvo](https://www.lawnext.com/2026/02/anthropics-legal-plugin-for-claude-cowork-may-be-the-opening-salvo-in-a-competition-between-foundation-models-and-legal-tech-incumbents.html)
+- [LawNext: 10 Reasons the Market Overreacted](https://www.lawnext.com/2026/02/guest-post-ken-crutchfield-on-10-reasons-the-market-overreacted-to-claudes-legal-skills-announcement.html)
+- [Artificial Lawyer: Anthropic Moves Into Legal Tech](https://www.artificiallawyer.com/2026/02/02/anthropic-moves-into-legal-tech/)
+- [Kallam AI: Beyond the Hype](https://www.kallam.ai/blog/claude-cowork-legal-beyond-hype)
+- [Onit/ELR: 67% Bypass Legal](https://www.legaldive.com/news/legal-department-reputation-onit-elr-report-bypassing-legal/645224/)
+- [Sandstone: NDA and Intake Triage in 90 Days](https://sandstone.com/blog/your-first-legal-ai-agent-automate-nda-and-intake-triage-in-90-days)
+- [Bloomberg Law: Sequoia Leads Sandstone](https://news.bloomberglaw.com/legal-ops-and-tech/sequoia-leads-backing-of-ai-legal-technology-startup-sandstone)
