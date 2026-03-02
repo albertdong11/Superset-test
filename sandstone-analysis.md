@@ -2784,3 +2784,72 @@ Sandstone doesn't need Dev Mode per-seat pricing. It needs **three monetization 
 - [Forrester TEI of Dev Mode — 351% ROI](https://www.figma.com/blog/forrester-analyzes-the-roi-of-dev-mode/)
 - [NN/g Designer-to-Developer Ratios](https://www.nngroup.com/articles/ux-developer-ratio/)
 - [Figma Pricing Page](https://www.figma.com/pricing/)
+
+---
+
+## Q21: The GC Investors — Backgrounds, Companies, and Strategic Significance
+
+### Named GC / Head of Legal Investors (11 of 20+ Identified)
+
+| # | Name | Title | Company | Industry | Scale |
+|---|---|---|---|---|---|
+| 1 | **Mike Jacobson** | Fmr. GC (17 yrs); Board, PayPal | **eBay** | E-commerce | $10.7B rev, $37.6B mkt cap |
+| 2 | **Enrique Colbert** | General Counsel | **Wayfair** | E-commerce / Home | $12.2B rev, $13.5B mkt cap |
+| 3 | **Achilles Perry** | GC (US, Europe, Asia) | **CIBC Capital Markets** | Banking | Parent: ~$20B rev, $85B mkt cap |
+| 4 | **Erick Rabin** | General Counsel | **Bilt Rewards** | Fintech | ~$400M ARR, $10.75B val |
+| 5 | **Andrew Epstein** | General Counsel | **Demandbase** | B2B Marketing SaaS | >$200M rev |
+| 6 | **Robert Graham** | Head of Legal | **fal (fal.ai)** | AI Infrastructure | >$200M rev, $4.5B val |
+| 7 | **Steve Ucci** | Secretary & GC | **Hypertherm Associates** | Industrial Mfg | ~$500-750M rev, ~1,500 emp |
+| 8 | **Kevin Keller** | SVP & GC | **Forward Networks** | Network Security | $112.9M raised, ~211 emp |
+| 9 | **Adam Greenberg** | General Counsel | **Crexi** | CRE Tech | $110M raised, ~445 emp |
+| 10 | **Katelyn Canning** | Head of Legal | **Ocrolus** | Fintech / AI Doc Auto | ~$92M rev, ~$500M val |
+| 11 | **Andy Dale** | GC & CPO | **OpenAP** | TV Ad Tech | ~45 emp (JV: NBCU, Fox, Paramount) |
+
+### Key Backgrounds
+
+**Mike Jacobson (eBay):** 17 years as eBay's GC, built 400-person global legal department, guided 1998 IPO and PayPal/Skype acquisitions. Now Of Counsel at Cooley, PayPal board member. Ran legal at massive scale — knows what workflow infrastructure looks like.
+
+**Enrique Colbert (Wayfair):** GC at $12B public company. Complex commercial ops (vendor agreements, logistics, multi-geo employment). Publicly endorsed Sandstone — a public-company GC willing to back a 2-month-old startup is a strong credibility signal.
+
+**Achilles Perry (CIBC):** GC covering US/Europe/Asia for one of Canada's Big Five banks. Joined 2003, led US Legal from 2007. Fordham Law. Signals Sandstone works for highly regulated financial services.
+
+**Kevin Keller (Forward Networks):** 26 years in legal tech roles. First product counsel for Amazon Kindle, Echo, Fire TV. Previous legal at Amazon, Instacart, Facebook. Seen legal ops at FAANG scale and startups — also CEO/Co-Founder of Tucuxi.
+
+**Andrew Epstein (Demandbase):** Became GC before age 35. Previously VP/AGC at LiveRamp. O'Melveny & Myers earlier career. Represents the young, tech-forward GC persona — exactly the early adopter profile.
+
+**Robert Graham (fal.ai):** Head of Legal at one of the hottest AI companies ($4.5B valuation). Previously at Fivetran, The Trade Desk. An AI company's legal leader investing in AI-native legal tools — firsthand conviction about AI capabilities.
+
+**Steve Ucci (Hypertherm):** Most-quoted testimonial: "We aren't just working faster; we're finally able to manage our department with the strategic precision the business expects." Also serves in Rhode Island state legislature. Voice of the underserved mid-market GC.
+
+### Notable Non-GC Investors
+
+| Name | Role | Significance |
+|---|---|---|
+| **Freddy Kerrest** | CEO & Co-Founder, Okta | Built $15B+ identity platform; enterprise SaaS scaling expertise |
+| **Scott McNealy** | Co-Founder, Sun Microsystems | Silicon Valley legend; enterprise infrastructure credibility |
+| **Operator Partners** | Founders of Flatiron Health | Sold to Roche for $1.9B; same playbook — verticalize data in regulated industry |
+| **Mary O'Carroll** (advisor) | Fmr. President of CLOC, Fmr. Director of Legal Ops at Google | Most influential person in legal operations globally |
+| **Bridget McCormack** (advisor) | President, AAA; Fmr. Michigan Supreme Court Chief Justice | Judicial credibility |
+| **Raji Arasu** | CTO, Autodesk | Enterprise software technology leadership |
+
+### What the Investor List Reveals
+
+**1. Company distribution validates mid-market thesis.** Public mega-caps (eBay, Wayfair), large financial (CIBC), unicorns (Bilt, fal.ai), growth SaaS (Demandbase, Ocrolus), mid-market private (Hypertherm, Crexi, Forward Networks), small JV (OpenAP). Exactly Sandstone's target: 1-15 lawyer teams at $200M-$12B companies.
+
+**2. Industry diversity reduces vertical risk.** E-commerce, fintech, banking, industrial manufacturing, AI infrastructure, B2B SaaS, CRE tech, adtech, document automation. Horizontal value prop confirmed.
+
+**3. These GCs are likely the first deployment sites.** Customer Advocates who gave testimonials (Ucci, Greenberg, Canning) are active users. These are the 5-10 accounts to go deepest on per Q17 priority.
+
+**4. Mary O'Carroll is the most underrated signal.** Former Director of Legal Ops at Google and President of CLOC — the industry body defining how legal ops works at scale. Her advisory means Sandstone has access to the blueprint for world-class legal departments AND the network to reach every GC who follows CLOC guidance.
+
+**5. Flatiron Health parallel is deliberate.** Operator Partners built a healthcare data company aggregating clinical data across oncology practices, creating network effects, sold to Roche for $1.9B. Same playbook: verticalize data in a regulated, trust-sensitive industry. Their investment signals they see the structural similarity to Sandstone's legal decision data thesis.
+
+---
+
+### Q21 Sources
+- [Sandstone About Page — Customer Advocates & Advisors](https://sandstone.com/about)
+- [Sandstone Homepage — Testimonials](https://sandstone.com/)
+- [Bloomberg Law: Sequoia Leads Sandstone](https://news.bloomberglaw.com/legal-ops-and-tech/sequoia-leads-backing-of-ai-legal-technology-startup-sandstone)
+- [The Lawyer: Over 20 GCs Back Sandstone](https://www.thelawyer.com/over-20-gcs-back-legal-tech-firm-sandstone-in-10m-fundraise/)
+- [Sequoia: Partnering with Sandstone](https://sequoiacap.com/article/partnering-with-sandstone-an-ai-native-platform-for-in-house-legal-teams/)
+- [DNYUZ/Fortune: McKinsey Consultant to Sequoia-Backed Startup](https://dnyuz.com/2026/01/13/this-consultant-advised-big-law-at-mckinsey-now-sequoia-is-backing-his-ai-startup-for-in-house-lawyers/)
