@@ -2155,3 +2155,70 @@ Sandstone's job: make Claude's legal capabilities useful inside enterprises. Ant
 - [Fortune: AI Agents Aren't Killing SaaS](https://fortune.com/2026/02/10/ai-agents-anthropic-openai-arent-killing-saas-salesforce-servicenow-microsoft-workday-cant-sleep-easy/)
 - [Sacra: Anthropic Revenue and Valuation](https://sacra.com/c/anthropic/)
 - [Medium: SaaSpocalypse and $200B Wipeout](https://medium.com/@bhallaanuj69/claude-cowork-just-triggered-the-saaspocalypse-how-11-plugins-wiped-out-200-billion-in-market-51082035c355)
+
+---
+
+## Q15: Sandstone's Day 0 Singleplayer Value — The Honest Assessment
+
+### For a Single Lawyer: Effectively Zero
+
+No self-serve signup (only "Book a Demo"), no free trial, no public pricing. No singleplayer features: no standalone contract review, no drafting assistant, no document Q&A, no chat-based research. The entire product is a workflow orchestration layer — a single lawyer with Sandstone is like a single person with a phone system. The infrastructure exists, but there's no one calling in.
+
+Compare: GC AI ($500/month, sign up at lunch, Word plugin, value by 2pm) or Claude Legal Plugin ($20/month, already bundled, `/review-contract` and go).
+
+### For a Legal Team (3-5) Before Org Adoption: Limited but Real
+
+**Day 1-14:** Playbook configuration (codify contract positions), manual request logging (legal ticketing), knowledge capture (upload past contracts). Setup work, not productivity value.
+
+**Week 2-4 (with email integration):** Connect legal@company.com → AI classifies and routes inbound requests. No business team behavior change needed. Visibility dashboards show request volume, turnaround times, workload distribution. For a GC managing a small team, this alone may justify cost.
+
+**Day 30-90 ("first agent"):** Auto-resolution for one request type (typically NDAs). Sandstone's blog outlines a 90-day path: pick 2 workflows, codify 5 rules, connect intake, enable "green zone" auto-resolution. Target: 60-80% of NDAs handled without lawyer touch. 1-hour acknowledgment SLAs become achievable.
+
+**The critical gap:** All of this value is about managing the queue, not making individual lawyers better at legal work. Lawyers still need a separate tool to actually do contract review, drafting, and analysis. Sandstone orchestrates the workflow — it doesn't do the work itself.
+
+### Why This Matters Competitively
+
+**The adoption funnel has a hole at the top:**
+
+```
+SINGLEPLAYER              TEAM                    ORG-WIDE
+Individual tries it       GC mandates it          Business teams route through it
+|                         |                        |
+GC AI: Day 0 ✓           GC AI: Month 2           GC AI: ✗ (no business interface)
+Claude Plugin: Day 0 ✓    Sandstone: Month 1-2     Sandstone: Month 3+
+Sandstone: ✗              Ironclad: Month 3-6      Ironclad: Month 6+
+```
+
+71% of legal professionals use AI without formal organizational approval. They're signing up for GC AI, ChatGPT, or Claude on their own credit cards. Sandstone has no way to capture these users.
+
+**The sequence risk:** GC AI becomes the "first tool" → ships "good enough" workflow in 12-18 months → when the GC considers a platform, "we already have GC AI and it does enough" → Sandstone must displace an incumbent rather than fill a vacuum.
+
+### The Counter-Argument: Singleplayer Doesn't Matter If You Win at the Right Level
+
+**1. The GC is the buyer, not the individual lawyer.** Sandstone targets the departmental decision, not the individual one. "My team will be systematically faster and I'll have full visibility" beats "each lawyer has a nice chatbot."
+
+**2. Singleplayer legal AI is getting commoditized.** Claude's Legal Plugin proves individual-lawyer AI is becoming a free feature. Building singleplayer would put Sandstone into a commodity race it can't win.
+
+**3. Ironclad proves top-down works.** 2,000+ customers, $200M+ ARR, zero singleplayer value. No individual lawyer signs up for Ironclad — the GC decides, legal ops implements.
+
+**4. Streamline AI shows intake deploys fast enough.** 2-4 week implementation, embeds in Slack/Teams — minimal business team behavior change.
+
+**5. Lock-in happens at team/org level.** Individual plans: ~50% annual churn. Team plans: 1-2% monthly churn with net negative churn (expansion exceeds losses). The money, stickiness, and data moat all live at the multiplayer level.
+
+### Net Assessment
+
+Sandstone's lack of Day 0 singleplayer value is a **genuine disadvantage but not fatal.** It means Sandstone will never win the volume game — that goes to GC AI and the foundation models. What Sandstone can win is the **depth game**: 5,000-10,000 mid-market and enterprise legal teams that need real workflow transformation. These teams have 5+ lawyers, hundreds of requests per month, and need intake, triage, routing, auto-resolution, and institutional knowledge capture. A chatbot isn't the answer — a system is.
+
+The defense: Sandstone needs to make the GC-level sale fast enough that the platform decision happens before GC AI's bottom-up adoption reaches critical mass. The 20+ GCs who invested in the seed round are strategically critical — they'll deploy before GC AI spreads bottom-up through their teams, and their peer-GC referrals are the top-down equivalent of GC AI's viral loop.
+
+---
+
+### Q15 Sources
+- [Sandstone: First Legal AI Agent in 90 Days](https://sandstone.com/blog/your-first-legal-ai-agent-automate-nda-and-intake-triage-in-90-days)
+- [Sandstone: How to Build an AI Intake-Triage Engine](https://sandstone.ai/blog/how-to-build-an-ai-intaketriage-engine-to-speed-legal-response)
+- [GC AI Pricing](https://gc.ai/pricing)
+- [Clio: Shadow IT and Shadow AI in Law Firms](https://www.clio.com/blog/shadow-it-and-shadow-ai-law-firms/)
+- [Legal Evolution: PLG Strategy for Legal Tech](https://www.legalevolution.org/2020/08/a-product-led-growth-strategy-for-legal-tech-explained-197/)
+- [Ironclad: CLM Implementation](https://ironcladapp.com/journal/contract-management/clm-implementation-challenges)
+- [Streamline AI: Series A](https://www.streamline.ai/blog/series-a-funding-announcement)
+- [David Sacks: Individuals vs Teams](https://sacks.substack.com/p/individuals-or-teams-whos-the-better)
