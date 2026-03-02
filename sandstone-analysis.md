@@ -2075,3 +2075,83 @@ This is exactly the ServiceNow pattern: IT directors bought it to manage their o
 - [Onit/ELR: 67% Bypass Legal](https://www.legaldive.com/news/legal-department-reputation-onit-elr-report-bypassing-legal/645224/)
 - [Sandstone: NDA and Intake Triage in 90 Days](https://sandstone.com/blog/your-first-legal-ai-agent-automate-nda-and-intake-triage-in-90-days)
 - [Bloomberg Law: Sequoia Leads Sandstone](https://news.bloomberglaw.com/legal-ops-and-tech/sequoia-leads-backing-of-ai-legal-technology-startup-sandstone)
+
+---
+
+## Q14: Would Claude Build the Workflow Layer? Would It Make Sense?
+
+### Short Answer: No — It Would Be Strategically Irrational
+
+Anthropic could build a legal workflow platform. They have the AI, the capital ($14B annualized revenue), and the enterprise relationships (8 of Fortune 10 are customers). But doing so would violate almost every principle of their actual strategy.
+
+### Anthropic's Strategy Is Platform, Not Application
+
+Anthropic is running the AWS playbook, not the Salesforce playbook:
+
+- **70-75% of revenue comes from the API** — selling tokens to developers and enterprises who build applications on top of Claude
+- **MCP** was open-sourced (Nov 2024) then **donated to the Linux Foundation** (Dec 2025) with OpenAI, Google, Microsoft, and AWS as co-stewards — the clearest possible signal that Anthropic wants to own the protocol layer, not the application layer
+- **10,000+ public MCP servers** already exist — a self-reinforcing ecosystem
+- **Claude Cowork plugins** are deliberately thin — pre-built templates and system prompts, not full products. The legal plugin is ~200 lines of markdown
+- **Dario Amodei** said explicitly: Anthropic builds first-party apps to generate user signal that improves the model, not to be an application company. They avoid verticals they're "not passionate about"
+
+### Why Building Legal Workflow Would Be a Strategic Mistake
+
+**1. It would destroy their ecosystem**
+
+Harvey ($195M ARR), GC AI ($10M+ ARR), Sandstone, Ironclad, Thomson Reuters, LexisNexis — all Claude API customers or MCP integrators. If Anthropic builds a legal workflow platform, every legal tech company on their API faces an existential threat. The "Amazon Basics" problem would erode trust across every vertical, not just legal.
+
+The legal plugin alone triggered $200B+ in SaaS market cap destruction. That was for a 200-line system prompt. A full workflow product announcement would cause a platform exodus.
+
+**2. The economics don't justify it**
+
+At $14B annualized revenue growing to $70B projected by 2028, Anthropic is one of the fastest-growing companies in history. Each new API customer requires zero sales engineering.
+
+A legal workflow platform means: hiring legal domain experts, building 30+ enterprise integrations, implementation services, customer success for complex deployments, 3-6 month sales cycles requiring deep domain credibility. Revenue at maturity: $50-200M — a rounding error against their $14B+ base.
+
+Why spend organizational attention on a $200M market when you're building a $70B platform?
+
+**3. Domain expertise is the moat, not AI capability**
+
+Sandstone's value isn't "we have good AI" — the AI is Claude. Sandstone's value is knowing that 60-80% of NDAs can be auto-resolved, understanding that business team experience matters more than lawyer productivity, building 30+ system integrations, designing triage taxonomies that match legal ops reality, and earning GC trust through domain credibility. None of this is an AI problem. It's domain expertise + workflow design + enterprise integration. A completely different company than Anthropic.
+
+**4. The plugin already captures the value they want**
+
+From Anthropic's perspective, the ideal outcome: 10 legal tech companies each building $100M+ businesses on Claude's API. That's $1B+ in API revenue from the legal vertical alone, with zero product investment in legal workflow. Building their own platform would cannibalize this ecosystem revenue while adding enormous complexity.
+
+### Historical Precedent Is Unambiguous
+
+| Platform | Built Vertical Apps? | Result |
+|---|---|---|
+| **AWS** | Minimal (Chime, WorkSpaces) | "Second-class citizens to IaaS business." Power came from enabling Salesforce, Snowflake — not competing with them |
+| **Stripe** | No — stayed at payments infrastructure | Enabled Shopify, DoorDash, Instacart. Platform revenue far exceeded any vertical |
+| **Twilio** | Minimal (Flex) | Core business remains API. Flex dwarfed by platform revenue |
+
+Platform companies that stay platform generate more long-term value than platform companies that chase application revenue.
+
+### The One Exception Scenario
+
+Anthropic might build deeper if no one else demonstrates Claude's full capabilities in legal — a **reference implementation** the way Google built Gmail to prove web apps could replace desktop software. But that's a "break glass in emergency" move, not a strategy.
+
+### What This Means for Sandstone
+
+**Anthropic is Sandstone's best friend, not its competitor:**
+
+1. Open-sourced MCP — Sandstone builds on a standard protocol Anthropic maintains
+2. Legal plugin is thin — validates the category without competing on workflow
+3. API-first model — Anthropic makes more money from Sandstone succeeding than from competing with it
+4. Donated MCP to Linux Foundation — long-term commitment to being platform, not application
+5. Plugin marketplace — Anthropic wants partners to fill vertical niches
+
+The real risk isn't that Anthropic builds legal workflow. It's that the thin plugin is "good enough" for small teams, shrinking Sandstone's addressable market at the low end. But for mid-market and enterprise teams needing real intake, triage, routing, auto-resolution, and institutional knowledge capture? Anthropic has zero interest in building that.
+
+Sandstone's job: make Claude's legal capabilities useful inside enterprises. Anthropic's job: make Claude better. The incentives are aligned.
+
+---
+
+### Q14 Sources
+- [Dario Amodei on Vertical Strategy (Stripe Podcast)](https://cheekypint.substack.com/p/a-cheeky-pint-with-anthropic-ceo)
+- [Anthropic: Donating MCP to Linux Foundation](https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation)
+- [VentureBeat: Claude Cowork Enterprise Push](https://venturebeat.com/orchestration/anthropic-says-claude-code-transformed-programming-now-claude-cowork-is-coming-for-the-rest-of-the-enterprise/)
+- [Fortune: AI Agents Aren't Killing SaaS](https://fortune.com/2026/02/10/ai-agents-anthropic-openai-arent-killing-saas-salesforce-servicenow-microsoft-workday-cant-sleep-easy/)
+- [Sacra: Anthropic Revenue and Valuation](https://sacra.com/c/anthropic/)
+- [Medium: SaaSpocalypse and $200B Wipeout](https://medium.com/@bhallaanuj69/claude-cowork-just-triggered-the-saaspocalypse-how-11-plugins-wiped-out-200-billion-in-market-51082035c355)
