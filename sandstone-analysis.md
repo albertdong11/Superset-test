@@ -2547,3 +2547,240 @@ If Anthropic/OpenAI/Microsoft ship "good enough" workflow bundled with enterpris
 6. 7-8 years of execution without major competitive disruption
 
 Miss any one and you're more likely $2-5B. Still extraordinary from $10M seed — but not the $10B+ Sequoia is underwriting.
+
+---
+
+## Q19: Can Sandstone Own the Middle Market? (Competitive Reality Check)
+
+### The Thesis to Challenge
+
+"Neither GC AI nor Ironclad can compete in the mid-market if Sandstone moves fast."
+
+**The thesis is correct about GC AI and Ironclad. But it's incomplete — the mid-market isn't empty.**
+
+---
+
+### Why GC AI and Ironclad Can't Compete Here (Confirmed)
+
+**GC AI** is a copilot, not a platform. It helps individual lawyers answer questions faster but doesn't restructure how a legal team operates. You can't build intake, triage, routing, or institutional knowledge capture from a chatbot. Claude's Legal Plugin at $20/month is commoditizing their core value proposition.
+
+**Ironclad** is enterprise infrastructure: 3-6 month implementation, $60K-$150K/year, requires full-time admin. A 5-person mid-market team drowning in Slack requests won't buy it. They keep using email.
+
+---
+
+### The Competitive Map You're Missing: $313M+ in Mid-Market Legal Tech
+
+Six companies with combined $313M+ in funding are already competing for mid-market legal workflow:
+
+**1. Streamline AI ($14M raised) — HIGHEST THREAT**
+
+Direct competitor. Same positioning: AI-powered legal intake and triage. Already has Gusto, Logitech, and other mid-market logos. 500+ in-house lawyers using it, 2-4 week implementation. Same "embed in Slack/Teams, zero behavior change for business users" approach. Founded by former BigLaw + tech operators who saw the same whitespace.
+
+Why it matters: If Sandstone's pitch is "we built the AI intake layer for mid-market," Streamline is already there with customers and case studies. This is the most direct competitive overlap.
+
+**2. SpotDraft ($92M raised) — SERIOUS WAR CHEST**
+
+Explicitly targeting mid-market CLM with "built for growing teams" messaging. 700+ customers, aggressive pricing (reportedly 30-50% cheaper than Ironclad). $92M from Prosus Ventures = years of runway. Contract lifecycle focus (templates, workflows, e-signature) rather than intake.
+
+Why it matters: $92M buys significant product development. If SpotDraft adds intake, they compete from above with deeper contract functionality.
+
+**3. LawVu ($42.5M raised, $20M ARR) — MOST MATURE**
+
+Full legal workspace: matters, contracts, spend, intake all in one. $20M ARR = real traction, not vaporware. Acquired ClauseBase for contract drafting AI. $400M+ valuation at last raise.
+
+Why it matters: LawVu already has the multi-module platform Sandstone is building toward. Ahead on breadth, behind on AI depth.
+
+**4. Checkbox AI ($41M raised) — ENTERPRISE-SKEWING BUT ADJACENT**
+
+"AI Legal Front Door" = same intake/triage positioning language. 100+ enterprise customers, $5.5M ARR. Strong in APAC, expanding to US. $100M+ valuation.
+
+Why it matters: Enterprise today but "Legal Front Door" messaging targets the same buyer psychology.
+
+**5. Juro ($40.5M raised, 6,000+ companies) — CONTRACT LAYER**
+
+6,000 companies across 85 countries. 29-day average implementation (fast, mid-market optimized). Browser-based contract automation across legal, HR, finance, sales.
+
+Why it matters: Massive installed base. If Juro adds intake upstream, they cross-sell to 6,000 existing accounts.
+
+**6. Tonkean ($83.2M raised) — HORIZONTAL THREAT**
+
+General-purpose process orchestration, not legal-specific. But Gartner recognized them in "Legal Department Intake and Triage" 2025 Hype Cycle. Backed by Accel, Lightspeed, Eric Schmidt.
+
+Why it matters: Represents the "configure a general platform for legal" alternative. Well-funded horizontal player entering the vertical.
+
+---
+
+### Why Sandstone Can Still Win Despite $313M in Competing Capital
+
+**1. Nobody has won yet.** No mid-market legal workflow company has >$50M ARR. The market is fragmented and early. Legal tech adoption is still <40% even for basic CLM. The race is wide open.
+
+**2. AI-native vs. AI-augmented is a real gap.** Streamline, SpotDraft, LawVu, Juro — all built pre-LLM and are adding AI features. Sandstone built on LLMs from day one. The "context in motion" architecture (pulling from Slack, email, Salesforce, enriching with AI, routing intelligently) is architecturally different from adding a chatbot to a workflow tool.
+
+**3. Sequoia changes the talent game.** In legal tech, where most competitors raised from legal-specific or regional VCs, Sequoia gives Sandstone top engineering talent access, enterprise intro network, and credibility in a trust-driven market.
+
+**4. Speed to full-stack matters most.** The mid-market winner will be whoever builds the complete operating system (intake → contracts → matters → spend → intelligence) fastest. Everyone has one piece. Nobody has the whole thing. Sandstone's AI-native architecture should let them ship modules faster than competitors refactoring legacy codebases.
+
+---
+
+### Why the Thesis Could Break
+
+**1. Streamline AI is already there.** Same positioning, real customers, case studies, and a 2-year head start on deployment learnings. If Streamline raises a $30M Series B (likely), they have comparable resources and more market proof.
+
+**2. SpotDraft's $92M is a lot of runway.** They can build an intake layer, cut prices, and outspend Sandstone on sales for years. If SpotDraft decides "we need to own intake too," that's a well-funded competitor attacking from the contract side.
+
+**3. The winner may not be the best product.** Mid-market legal tech buying is relationship-driven, not feature-driven. LawVu with $20M ARR has 3-4 years of customer relationships, implementation playbooks, and reference accounts. Hard to replicate regardless of AI quality.
+
+**4. Convergence is coming.** Everyone is building toward the same endpoint: intake + contracts + matters + AI. In 24 months, Streamline adds contracts, SpotDraft adds intake, LawVu adds better AI, Juro adds triage. The differentiation window is narrow.
+
+---
+
+### Net Assessment: Scenario Analysis
+
+| Scenario | Probability | Outcome |
+|---|---|---|
+| **Sandstone dominates** (bull thesis) | ~20% | Fastest to full-stack + best AI + Sequoia network = winner-take-most |
+| **Sandstone wins intake, competes on rest** | ~40% | Best intake tool, competitive on contracts/matters, 25-30% market share |
+| **Fragmented market** | ~30% | 4-5 players each at $100-300M ARR serving different segments |
+| **Sandstone loses to Streamline or SpotDraft** | ~10% | Outcompeted by head start (Streamline) or war chest (SpotDraft) |
+
+### Conditions for Sandstone to "Own" Mid-Market
+
+All four must be true:
+
+1. **Ship contract automation by Q4 2026** — before SpotDraft adds intake
+2. **Win 10-15 referenceable mid-market logos before Streamline gets to 50** — case studies are the currency in GC buying decisions
+3. **Hit 135%+ NRR proving land-and-expand works** — before LawVu's breadth advantage compounds
+4. **Use Sequoia network to out-hire in engineering and enterprise sales** — talent is the bottleneck, not capital
+
+Miss any of those and it's a 3-4 player market, not a winner-take-most market. Still a great outcome from a $10M seed — but not "owning" the mid-market.
+
+### The Honest Bottom Line
+
+Your instinct is right that GC AI (copilot) and Ironclad (enterprise heavyweight) leave a structural gap in mid-market. But the gap has $313M+ in capital already flowing into it from six funded competitors. The question isn't whether the opportunity exists — it does. The question is whether Sandstone can execute fast enough to establish dominance before convergence turns it into a 4-player dogfight. The AI-native architecture and Sequoia backing give them a real shot. But "move fast" isn't just about Sandstone moving fast — it's about moving faster than Streamline (who's already there), SpotDraft (who has 9x the capital), and LawVu (who has 5x the revenue).
+
+---
+
+### Q19 Sources
+- [Streamline AI Series A Announcement](https://www.streamline.ai/blog/series-a-funding-announcement)
+- [SpotDraft Series B ($92M)](https://www.spotdraft.com/blog/series-b-funding)
+- [LawVu Series B ($42.5M)](https://lawvu.com/blog/lawvu-raises-series-b/)
+- [Checkbox AI Funding](https://www.checkbox.ai/about)
+- [Juro Series B ($40.5M)](https://juro.com/blog/juro-raises-series-b)
+- [Tonkean Series B ($50M)](https://www.tonkean.com/blog/series-b)
+- [Gartner 2025 Hype Cycle — Legal Department Technology](https://www.gartner.com/en/legal-compliance/topics/legal-technology)
+- [G2 Mid-Market Legal Tech Reviews](https://www.g2.com/categories/contract-lifecycle-management-clm)
+
+---
+
+## Q20: The Figma Parallel — Does Sandstone Need a "Dev Mode" for Business Users?
+
+### Figma's Pricing Expansion Playbook
+
+**Phase 1 (2018-2023):** Designers pay ($12-75/month), everyone else free. Result: 13M+ MAU, only designers monetized.
+
+**Phase 2 (2024):** Dev Mode ($25-35/month) creates new paid tier for developers — who were already 30% of WAU. More developers visited Figma than designers on paid plans. Two-thirds of all users were non-designers paying nothing.
+
+**Phase 3 (2025):** Full role-based tiers — Full Seat ($15-90), Dev Seat ($12-35), Collab Seat ($3-5), Viewer (free).
+
+**The ACV math:** Company with 50 designers + 500 developers. Before Dev Mode: $33K/year. After (20% dev conversion): $63K/year. **~90% ACV increase, same customer.** This drove NRR to 132-134%, revenue from $505M (2023) to $1B+ (2025), IPO at ~$21B.
+
+### The Structural Parallel
+
+| | Figma | Sandstone |
+|---|---|---|
+| Core paying user | Designers | Lawyers |
+| Adjacent user (free value) | Developers | Business teams |
+| Ratio | 1 : 5-20 | 1 : 50-500 |
+| Adjacent user behavior | Views files, inspects specs, grabs assets | Submits requests, gets NDAs, tracks status |
+| Pain point | Handoff friction, 90+ min/week wasted | Legal bottleneck, multi-day waits, 67% bypass |
+| Current monetization | Dev Mode ($25-35/seat) | **None** |
+
+Sandstone's expansion potential is an order of magnitude larger — 50-500x ratio vs. 5-20x.
+
+### Why Per-Seat Pricing Won't Work for Business Users
+
+**1. Business users don't "log into" Sandstone.** They submit via Slack/email and get a response. Charging a "seat" for sending a Slack message feels absurd and kills adoption.
+
+**2. Sandstone needs maximum adoption, not monetization (yet).** Figma gated Dev Mode after 5+ years of free developer usage. The habit was formed. Sandstone is pre-habit — the 67% who bypass legal need to start routing through the system first. Any friction kills this.
+
+**3. Value accrues collectively, not individually.** Dev Mode saves individual developers 90 min/week — worth $25/month to their manager. Sandstone's value to business teams is collective: faster deals, reduced compliance risk, fewer bottlenecks. The right unit is business outcome, not business user seat.
+
+### What Sandstone's "Dev Mode" Actually Looks Like: Three Pricing Layers
+
+**Layer 1: Volume-Based Pricing (Usage Ramp) — Month 6-12**
+
+Charge on request volume, not user count:
+
+| Tier | Requests/Month | Price |
+|---|---|---|
+| Starter | Up to 200 | Included in platform fee |
+| Growth | 200-500 | $5K/month add-on |
+| Scale | 500-1,500 | $10K/month add-on |
+| Enterprise | 1,500+ | Custom |
+
+As business teams discover they get NDAs in hours instead of days, the 67% who bypassed legal start routing through Sandstone. Volume doubles, triples. Revenue grows automatically.
+
+ACV impact: $50K starter → $80-120K from volume alone.
+
+**Layer 2: Business Intelligence Dashboards — Month 12-18**
+
+Sold to CFO/COO, not the GC. Different buyer, different budget:
+- Legal impact on deal velocity ("deals through Sandstone close 12 days faster")
+- Compliance risk scoring ("15 deals bypassed legal review — here's risk exposure")
+- Department demand analysis ("Product generates 3x more legal requests than Engineering")
+- Headcount optimization ("40% more requests handled without additional hires")
+- Outside counsel benchmarking ("This firm is 2x slower than alternatives at same rate")
+
+Pricing: $15-30K/year add-on.
+
+ACV impact: Adds $15-30K to every account with a cost-conscious CFO.
+
+**Layer 3: Network Intelligence — Month 24-36**
+
+The moonshot — counterparty and ecosystem data:
+- "Acme Corp always pushes back on indemnity caps but accepts mutual limitation. Average negotiation: 8 days."
+- "Your preferred firm charges $450/hr for NDA review. Network average: $280/hr."
+- "Based on 200+ software companies, standard data processing terms shifted toward X."
+
+Pricing: $25-50K/year premium add-on.
+
+ACV impact: Adds $25-50K to mature accounts.
+
+### How This Changes the $10B Math
+
+With Figma-inspired pricing expansion:
+
+| Segment | Customers | Blended ACV | ARR |
+|---|---|---|---|
+| Mid-market (platform + layers) | 3,000 | $115K | $345M |
+| Enterprise (platform + layers) | 500 | $450K | $225M |
+| Strategic (Fortune 500) | 75 | $1.2M | $90M |
+| Network data add-on | 2,000 | $35K | $70M |
+| **Total** | **~3,575** | **~$204K** | **$730M** |
+
+**Key difference from Q18:** Reaches $730M ARR with 3,575 customers instead of 4,000+. Higher per-customer monetization reduces new logo acquisition burden.
+
+At 15x on 30%+ growth: **$730M × 15 = $10.95B.**
+
+### What Figma Got Right That Sandstone Must Copy
+
+**1. Make adjacent users addicted BEFORE charging.** Figma gave developers free access for 5 years. Sandstone must make business teams dependent on instant legal turnaround before layering on volume pricing.
+
+**2. Price by value received, not access granted.** Dev Mode at $25/month priced against "90 min saved/week." Sandstone should price volume against "deals closed faster" and intelligence against "outside counsel savings."
+
+**3. Create the conversion funnel inside the product.** Figma's paywall triggers when developers try to inspect a component. Sandstone's equivalent: CFO asks "how is legal affecting deal velocity?" — the answer requires the business intelligence add-on.
+
+### Net Assessment
+
+Sandstone doesn't need Dev Mode per-seat pricing. It needs **three monetization layers that capture the value business users create through the platform**: volume (usage ramp), business intelligence (CFO-sold dashboard), and network intelligence (cross-company data). These can take $50K starter ACV to $135K+ mature — the same ~2.7x expansion Figma achieves through Dev Mode and Collab seats — while requiring fewer total customers to reach $10B.
+
+---
+
+### Q20 Sources
+- [Figma S-1 Analysis (Tomasz Tunguz)](https://tomtunguz.com/figma-s1-analysis/)
+- [Figma Dev Mode Launch](https://www.figma.com/blog/introducing-dev-mode/)
+- [Figma Pricing Evolution (PricingSaaS)](https://newsletter.pricingsaas.com/p/inside-figmas-pricing-evolution)
+- [Figma Q3 2025 Earnings — $1B+ ARR](https://www.fool.com/earnings/call-transcripts/2025/11/05/figma-fig-q3-2025-earnings-call-transcript/)
+- [Forrester TEI of Dev Mode — 351% ROI](https://www.figma.com/blog/forrester-analyzes-the-roi-of-dev-mode/)
+- [NN/g Designer-to-Developer Ratios](https://www.nngroup.com/articles/ux-developer-ratio/)
+- [Figma Pricing Page](https://www.figma.com/pricing/)
