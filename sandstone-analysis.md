@@ -2222,3 +2222,204 @@ The defense: Sandstone needs to make the GC-level sale fast enough that the plat
 - [Ironclad: CLM Implementation](https://ironcladapp.com/journal/contract-management/clm-implementation-challenges)
 - [Streamline AI: Series A](https://www.streamline.ai/blog/series-a-funding-announcement)
 - [David Sacks: Individuals vs Teams](https://sacks.substack.com/p/individuals-or-teams-whos-the-better)
+
+---
+
+## Q16: How Sandstone Actually Wins (and Loses) Against Ironclad in the Mid-Market
+
+### The Core Insight: Sandstone Doesn't Compete With Ironclad — It Competes With Doing Nothing
+
+63% of legal departments don't have CLM software. The mid-market buyer (5-15 person legal team, $200M-$2B revenue) isn't choosing between Sandstone and Ironclad. They're choosing between **Sandstone and the status quo** (email, Slack, spreadsheets). That's a fundamentally different competitive dynamic.
+
+---
+
+### Why Mid-Market Teams Don't Buy Ironclad (From Actual Reviews)
+
+**1. Implementation takes 2-6 months.**
+> "Getting workflows set up to cover possible permutations and outliers was a 2 months-long, aggravating experience." — Capterra
+
+**2. Costs $60K-$150K+/year with opaque add-ons.**
+> "The product is too expensive relative to the competition. I don't think they can justify some of the things they charge for." — G2
+> "You're promised a full-stack AI CLM, but once implementation starts, everything becomes an add-on." — Reddit
+
+**3. Requires a full-time admin that mid-market teams don't have.**
+> "It's very 'choose your own adventure' which is daunting if you don't have a full-time admin." — Capterra (COO, 51-200 employee company)
+> "I had to hire a consultant to do the work because it's simply not easy or intuitive." — TrustRadius
+
+**4. Business users (sales, procurement) don't adopt it.**
+> "Ironclad can be particularly difficult for non-legal users to adopt due to how technical it is." — G2
+
+**5. 80% of features go unused.**
+> "There's the problem of it doing SO much that it becomes hard to use all components." — G2
+
+The pattern: a 5-person legal team looks at Ironclad, sees a 3-month implementation, $80K/year, needs a dedicated admin they don't have, and their sales team won't use the portal. **They keep using email and spreadsheets.** This is the most common outcome.
+
+---
+
+### How Sandstone Wins: Three Structural Advantages
+
+**1. Sandstone competes against "nothing" — Ironclad competes against "good enough."**
+
+Sandstone's pitch to a team with no CLM: "Connect your Slack and email in 10 minutes. We'll start triaging your requests immediately. No implementation project. No change management. No one else at the company needs to change anything."
+
+Ironclad's pitch to the same team: "Standardize your templates, configure workflows, train your sales team on our portal, and in 3-6 months you'll have a CLM."
+
+For a 5-person team drowning in Slack requests, which do they say yes to?
+
+**2. Zero behavioral change for business users.**
+
+Sandstone's most important product decision: business users never see Sandstone. They keep Slacking the legal team, emailing contracts, submitting Jira tickets. Sandstone's AI agent intercepts in their native channel, classifies, enriches, and routes.
+
+Ironclad requires business users to use Ironclad's intake portal. Reviews confirm this fails. Adoption failure of the business-facing tool is the #1 reason CLM implementations underperform. Sandstone eliminates this by being invisible to non-lawyers.
+
+**3. Value on day one vs. value in month three.**
+
+Sandstone's "10-minute setup" works because the architecture is a layer on top, not a system of record from scratch:
+- Connect Slack/email/Salesforce via OAuth (minutes)
+- Drop in past redlined contracts to seed playbooks (minutes)
+- Define basic routing rules (minutes)
+- AI starts classifying and routing immediately
+
+No template standardization, no workflow configuration, no user training, no data migration. Ironclad requires building the system of record from scratch: templates, workflows, approval chains, user roles, integrations. That's 2-6 months before value.
+
+---
+
+### The Single-Player Question
+
+**Yes — Sandstone works for a solo GC.** Customer testimonial (Adam Greenberg, GC): "As a small legal team, Sandstone acts like an additional team member, handling the initial intake and routine redlining so I can focus on strategic decisions."
+
+One person connects Slack and email → gets structured intake, AI classification, playbook-driven redlines, and a workload dashboard. No team adoption required.
+
+Ironclad can't match this. Its workflow engine requires multiple roles (requestor, reviewer, approver, signer). A solo GC gets almost nothing from Ironclad without configuring the full workflow.
+
+---
+
+### How Sandstone Loses to Ironclad
+
+**Failure Mode 1: "Nice intake tool, but I still need Ironclad for contracts."**
+
+The most likely failure. Sandstone nails intake but the GC says: "Great, you organized my inbox. But I need template management, version control, counterparty collaboration, signature workflows, and obligation tracking. For that I need Ironclad."
+
+Sandstone becomes a **$15-30K/year intake layer** on top of Ironclad — useful but not a system of record. Ironclad owns the high-ACV contract workflow.
+
+**Defense:** Ship contract playbooks and drafting within 12-18 months. Be "good enough" for the 80% of routine contracts (NDAs, vendor agreements, standard MSAs). Let Ironclad keep the complex 20%.
+
+**Failure Mode 2: Ironclad ships a better Intake Agent.**
+
+Ironclad launched an Intake Agent in November 2025 (metadata extraction from contracts). They have $200M ARR, 670+ engineers, and a decade of workflow data. If they invest seriously in making intake fast and context-aware, they close Sandstone's gap from above.
+
+**Why Sandstone might survive:** Ironclad's Intake Agent is contract-centric. Sandstone handles everything — compliance questions, employment matters, regulatory inquiries, policy reviews. The mid-market team handling 500+ requests/year, of which only 40% are contracts, needs the broader tool.
+
+**Failure Mode 3: "10-minute setup" creates shallow product.**
+
+Easy to set up = easy to rip out. The institutional knowledge moat takes 6-12 months to build. If customers churn in month 3 before the moat deepens, low switching costs work against Sandstone.
+
+**Defense:** Make the learning curve steep and visible. Show customers: "Auto-resolved 15% in month 1, 35% in month 3, 55% in month 6." Make it viscerally clear that ripping out Sandstone = losing accumulated intelligence.
+
+**Failure Mode 4: GC AI captures the mid-market first.**
+
+GC AI is simpler, cheaper ($500/month/seat), growing 23% MoM, with 1,300+ customers. A solo GC who wants "answer my questions fast" picks GC AI. If GC AI adds basic intake, they own the simple end of mid-market before Sandstone scales.
+
+**Failure Mode 5: Anthropic/OpenAI ship legal agents directly.**
+
+Claude Cowork's legal plugin (Feb 2026) already caused Thomson Reuters -16% in a day. If foundation models ship 80% of Sandstone's functionality, the application layer value compresses. Sandstone's defense: the plugin is stateless (doesn't learn), has no workflow, no integrations, no institutional knowledge capture.
+
+---
+
+### The Race
+
+Sandstone has ~12-18 months to go from "best intake tool" to "good enough contract automation that you don't need Ironclad." That's the window.
+
+- **If they cross that threshold:** They're on the ServiceNow path — intake → contracts → matter management → platform.
+- **If they don't:** They're a feature layer that Ironclad replicates with their Intake Agent, or that GC AI matches with a simpler product.
+
+The key metrics to watch: NRR (needs >130%), module expansion rate (>50% of customers on 2+ modules within 12 months), and enterprise logos (needs 5-10 recognizable names by end of 2026).
+
+---
+
+### Q16 Sources
+- [Ironclad Reviews — G2](https://www.g2.com/products/ironclad/reviews)
+- [Ironclad CLM — Gartner Peer Insights](https://www.gartner.com/reviews/market/contract-life-cycle-management/vendor/ironclad/product/ironclad-clm)
+- [Ironclad Reviews — Capterra](https://www.capterra.com/p/162319/Ironclad/reviews/)
+- [Ironclad Reviews — TrustRadius](https://www.trustradius.com/products/ironclad/reviews)
+- [Ironclad CLM Analysis — Juro](https://juro.com/learn/ironclad-clm)
+- [Ironclad Alternatives — Avokaado](https://avokaado.io/stories/ironclad-alternatives)
+- [Ironclad Alternatives — Bind Legal](https://bindlegal.com/resources/comparisons/ironclad-alternatives/)
+- [Ironclad Reviews — Hyperstart](https://www.hyperstart.com/blog/ironclad-reviews/)
+- [Sandstone Homepage](https://sandstone.com)
+- [Sandstone: First Legal AI Agent in 90 Days](https://sandstone.com/blog/your-first-legal-ai-agent-automate-nda-and-intake-triage-in-90-days)
+- [Artificial Lawyer: Sandstone Raises $10M](https://www.artificiallawyer.com/2026/01/13/sandstone-raises-10m-seed-led-by-sequoia-for-inhouse-ai-agents/)
+
+---
+
+## Q17: What Should Sandstone's Priority Be Right Now?
+
+### Context: March 2026
+
+2 months post-launch. $10M seed from Sequoia. "Couple dozen" paying customers. No PLG motion. GC AI at 1,300+ customers growing 23% MoM. Claude Legal Plugin just commoditized the copilot layer. Ironclad at $200M ARR shipping an Intake Agent. ~18-month window before competitive dynamics harden.
+
+### The Answer: Prove Depth at 5-10 Accounts, Then Weaponize the Proof
+
+**Priority 1: Prove Devastating Value at 5-10 Accounts (Months 1-6)**
+
+This is the only thing that matters right now. Pick 5-10 best-fit existing customers and make them so successful they become walking billboards. Produce 3-5 case studies so compelling every GC who reads them thinks "I need this."
+
+What "devastating" looks like:
+- **Quantified before/after**: "NDA turnaround went from 5.2 days to 4 hours." "65% of vendor intakes auto-resolve." "Legal team handles 40% more requests without adding headcount."
+- **GC-quotable outcomes**: "We went from reactive to strategic." "For the first time I can see everything my team is working on."
+- **Business team testimony**: "Sales closes deals faster because legal isn't a bottleneck." This is the testimony that makes CFOs care, not just GCs.
+- **Expansion proof**: One customer that started with NDAs and expanded to vendor intake → employment → compliance — showing land-and-expand works.
+
+Why this is #1: Sandstone is selling transformation to a risk-averse buyer in a trust-driven market where 5/6 of adoption is "social imitation, not analytical reasoning." GCs buy because a peer GC they respect says "this changed how my department operates." With $10M and no PLG, Sandstone can't outspend GC AI. The only strategy is to win so decisively at a few accounts that the proof radiates outward.
+
+Tactically: Assign a dedicated person to each top account (founder-led if necessary). Ship custom integrations. Build playbooks with them. Measure everything. Get the GC on camera.
+
+**Priority 2: Convert Proof into GC-to-GC Network Effect (Months 4-9)**
+
+Turn successful GCs into the sales force. The 20+ GC investors are the nucleus — each knows dozens of other GCs. In-house counsel is a tight community (ACC events, Slack groups, vendor referrals). One GC saying "Sandstone transformed my team" at an ACC chapter dinner is worth $1M in marketing.
+
+What this looks like:
+- **GC Advisory Board** — formalize investor-GCs, give them early access, make them feel ownership
+- **Curated referrals** — not generic "refer a friend." Personal GC-to-GC introductions facilitated by Sandstone
+- **Small-format events** — dinners of 10-15 GCs where customers share experience. Not a sales pitch — peer conversation
+- **ACC chapter partnerships** — sponsor local chapters, let customer GCs tell the story
+
+Target: 50-75 mid-market customers by month 9, primarily through GC referrals.
+
+**Priority 3: Accumulate Data to Unlock Decision Benchmarks (Months 6-18)**
+
+The data moat only materializes with critical mass, but you can't prioritize it first:
+- Data without PMF proof is worthless — you'll churn the customers who generated it
+- Premature data aggregation creates trust risk — GCs are extremely sensitive about benchmarking their data
+- Need 50-100+ customers before cross-company patterns are statistically meaningful
+
+Right sequence:
+- **Months 1-6:** Company-specific institutional knowledge at each account. Immediately valuable to that customer
+- **Months 6-12:** Industry-level patterns with 50+ customers. Opt-in insights
+- **Months 12-24:** Formal benchmarking with 100+ customers. The retention and expansion moat
+
+### What I Would NOT Prioritize First
+
+**"Maximize mid-market GC buy-in" — too broad, too early.** Spraying outbound across hundreds of GCs with a 2-month-old product and no case studies burns seed capital. Every failed pilot is a GC who tells peers "we tried Sandstone and it didn't work." Negative word-of-mouth spreads faster than positive. Broad outreach becomes right at ~$5-10M ARR with proof and a repeatable implementation playbook.
+
+**"Get logos" — vanity metric at seed stage.** Next fundraise will be driven by revenue growth and retention metrics, not logo count. Ten deeply successful customers beat 50 shallow deployments. Exception: 1-2 Fortune 500 logos as credibility anchors if they come organically through GC investors.
+
+**"Get the most market-wide data" — cart before horse.** Optimizing for breadth before depth creates two problems: (1) light deployments generate low-quality data (sparse requests, incomplete playbooks, partial integrations), and (2) implementation resources get diluted across too many accounts, making each mediocre instead of a few extraordinary. The data moat compounds naturally once the customer engine works.
+
+### Execution Timeline
+
+| Quarter | Priority | Metric | Why |
+|---|---|---|---|
+| **Q1 2026** (now) | Go deep at 5-10 accounts | Auto-resolution rates, cycle time reduction, GC NPS | Build the proof |
+| **Q2 2026** | Produce 3-5 case studies, activate GC referrals | Case studies published, referral conversations started | Create the sales weapon |
+| **Q3 2026** | Expand to 50-75 customers via referrals + targeted outbound | New customer count, NRR at existing accounts | Scale what works |
+| **Q4 2026** | Launch industry benchmarks, raise Series A | Cross-company insights, ARR | Prove the data thesis |
+| **H1 2027** | Broad mid-market GTM with repeatable playbook | CAC payback, implementation time, logo growth | Ready to scale |
+
+### The Meta-Point: Sequence Matters More Than Strategy
+
+Every option listed — GC buy-in, logos, deep proof, data — is correct as a priority. They're all things Sandstone needs. The question isn't "which one" but "in what order."
+
+The mistake most enterprise startups make at seed stage is trying to do all of them simultaneously. They spread across 50 accounts, produce mediocre results at all of them, generate no compelling case studies, burn their seed on broad outbound, and end up with a 24-month-old company that has lots of logos and no proof.
+
+The Sequoia playbook: **go narrow and deep first, then expand from proven strength.** The 20+ GC investors are the unfair advantage — not just checks, but deployment sites, referral sources, and credibility anchors. Make their deployments flawless. Then let them tell the story.
