@@ -3608,3 +3608,386 @@ If Sandstone can deliver those answers — which are purely visibility and workf
 - [KPMG Legal Department Benchmarking](https://kpmg.com/us/en/articles/legal-operations-survey.html)
 
 ---
+
+## Q28: Can Sandstone Land 3-5 Enterprise Logos in 3-6 Months?
+
+### Short Answer: Very Unlikely (~15-20% Probability)
+
+---
+
+### What We Know About Current Customers
+
+Bloomberg Law (Jan 2026) says "a couple dozen" customers including "a couple Fortune 500s." But:
+
+- **No Fortune 500 logos are named anywhere** — not on the website, blog, LinkedIn, or press
+- **The three named advocates are all mid-market:** Crexi (~$44M funded startup, ~200-500 employees), Hypertherm (~$650M rev, ~2,000 employees), Ocrolus (~$250M rev, ~650-900 employees)
+- The "couple Fortune 500s" likely refers to **investor-GCs testing informally** (e.g., Enrique Colbert at Wayfair, Achilles Perry at CIBC) — not procurement-backed enterprise deployments
+
+There's a meaningful gap between "GC investor trying it out" and "Fortune 500 enterprise customer who went through procurement."
+
+---
+
+### Three Hard Blockers
+
+**1. No SOC 2 (apparent).**
+
+No security/trust page on sandstone.com. No mention of SOC 2 or ISO 27001 anywhere. For comparison, GC AI explicitly advertises SOC 2 Type II on their website.
+
+- 83% of enterprise buyers require SOC 2 from SaaS vendors
+- At 5,000+ employee companies: 91% require it
+- For legal tech handling privileged communications: effectively 100%
+- SOC 2 Type II takes **6-12 months** from starting the process
+- This alone is a **hard gate** for Fortune 500 procurement
+
+**2. Enterprise procurement takes 6-18 months.**
+
+Even with an investor-GC champion, the deal still requires: CISO security review, DPA negotiation, financial evaluation, legal review of vendor contract, and often C-suite approval. A 4-month-old startup with $10M in funding faces additional viability scrutiny.
+
+**3. No named enterprise references.**
+
+The first enterprise deal is the hardest. Every subsequent buyer asks "who else at our scale?" Without a reference, every deal starts from zero trust.
+
+---
+
+### What Comparable Companies Did
+
+| Company | Time to First Enterprise Logos | Context |
+|---|---|---|
+| **Ironclad** | 4-6 years post-founding | Mastercard, L'Oreal, Staples came after $80M+ in funding |
+| **LawVu** | 5-8 years post-founding | Discord, Expedia, PwC (and these are $500M-$3.5B, not true Fortune 500) |
+| **Streamline AI** | 3+ years, still pre-enterprise | Focused on mid-market |
+
+---
+
+### The Investor-GC Shortcut
+
+Sandstone's one unfair advantage: 20+ GC investors who can champion internally. The most plausible enterprise path:
+
+| Step | Timeline | Notes |
+|---|---|---|
+| Investor-GC runs real pilot | Q1-Q2 2026 | Colbert (Wayfair) or Perry (CIBC) most likely |
+| Pilot succeeds | Q3 2026 | Needs measurable results |
+| Procurement process starts | Q3-Q4 2026 | 3-6 months minimum |
+| SOC 2 Type II obtained | Q4 2026 | If they started immediately |
+| First enterprise deal closes | **Q1 2027** | Best case |
+| That reference unlocks 2-4 more | **Q2-Q4 2027** | |
+
+Even the fastest realistic path puts the first enterprise deal at **Q1 2027** — 12 months out, not 3-6.
+
+---
+
+### Probability Distribution
+
+| Scenario | Timeline | Probability |
+|---|---|---|
+| 3-5 enterprise logos in 3-6 months | By Sept 2026 | **~15-20%** |
+| 3-5 enterprise logos in 12-18 months | By Q3 2027 | **~35-45%** |
+| Stays mid-market for 2+ years | 2028+ | **~40-50%** |
+
+---
+
+### Why This Is Actually Fine
+
+Per Q17 analysis, enterprise logos are **not the priority right now.** The priority is proving devastating value at 5-10 mid-market accounts and generating case studies. Enterprise logos are credibility anchors, not the growth engine.
+
+The $10B math (Q18) requires ~500 enterprise accounts at $250K-$1M — but that's a 2029-2031 milestone, not 2026. Sandstone's current customers (Crexi, Hypertherm, Ocrolus) are exactly the right profile for proving PMF: 2-8 person legal teams, GC as buyer, fast implementation, measurable results.
+
+**1-2 enterprise logos as credibility anchors by Q1 2027 is a reasonable target.** 3-5 in 3-6 months is not.
+
+---
+
+### Q28 Sources
+- [Bloomberg Law — Sequoia Leads Backing of Sandstone](https://news.bloomberglaw.com/legal-ops-and-tech/sequoia-leads-backing-of-ai-legal-technology-startup-sandstone)
+- [Sandstone Homepage — Customer Testimonials](https://sandstone.com/)
+- [GC AI Security Page — SOC 2 Type II](https://gc.ai/security)
+- [Gray Group — SOC 2 Compliance for Startups](https://www.graygroupintl.com/blog/soc-2-compliance-startups/)
+- [WorkOS — Enterprise Sales for Founders](https://workos.com/blog/enterprise-sales-founders)
+- [Contrary Research — Ironclad Business Breakdown](https://research.contrary.com/company/ironclad)
+- [LawFuel — LawVu $400M Valuation](https://www.lawfuel.com/lawvu-hits-400m-valuation-and-goes-full-speed-on-legal-ai/)
+
+**Q28 Correction:** Research in Q29 revealed Sandstone's security page confirms SOC 2 certification with a trust center at trust.sandstone.com. The SOC 2 gap described above may not exist, which would moderately improve the enterprise timeline (removing one hard blocker). However, procurement timelines and lack of named enterprise references remain constraints.
+
+---
+
+## Q29: What Is the Actual Product Today? (March 2026 Reality Check)
+
+### What's Shipped and Working (High Confidence)
+
+Based on customer testimonials (parsing verb tense carefully), the Head of ML's blog post, and CEO interviews:
+
+| Capability | Evidence | Confidence |
+|---|---|---|
+| **Centralized intake inbox** (Slack, email, ServiceNow, Jira, Ironclad → single queue) | Multiple customer testimonials, core marketing claim | High |
+| **AI classification and routing** (incoming requests categorized and routed to right lawyer) | Core product function, referenced across all materials | High |
+| **Context enrichment** (pulls business context from Salesforce, Ironclad, connected systems) | Canning (Crexi): "sits across Salesforce, Ironclad, Slack, and email" | High |
+| **Playbook-based first-pass redlining** (routine contracts: NDAs, standard agreements) | Greenberg: "handling the initial intake and routine redlining" | Moderate-High |
+| **Work tracking dashboard** (workload visibility, assignments, status) | Ucci: "I have real-time insights into our entire workload" | Moderate-High |
+| **OAuth integrations** (~20+ tools, depth varies per customer) | Homepage logos + ML blog confirms active Salesforce/HubSpot/ServiceNow/Ironclad/Workday | Moderate |
+| **SOC 2 certification** | Confirmed on security page with trust center link (trust.sandstone.com) | High |
+
+### What "AI Agents" Actually Means
+
+**It's AI-powered automation with human-in-the-loop — not autonomous agents.**
+
+The "agents" classify, route, pull context, and generate first-pass redlines. The lawyer reviews and decides. No evidence of:
+- Agents completing tasks end-to-end without human review
+- Agents taking actions in external systems (sending Slack responses, updating Salesforce)
+- Agents operating in observe-adjust-retry loops
+
+The Head of ML (Eddy Atkins) is notably more honest than marketing — his blog post never uses "agent," describing instead "GenAI systems optimized upon playbooks." Nick Fleisher positions true autonomy as future: "the next two years will be about moving toward context-armed agents."
+
+**"Agent" is marketing-forward language for what is currently classification + routing + enrichment + drafting with human oversight.**
+
+### What's Partially Built / In Progress
+
+| Capability | Evidence | Assessment |
+|---|---|---|
+| **Dynamic playbooks** (learn from usage) | ML blog describes as active work | In development, not finished |
+| **Deep analytics** | Ucci mentions "real-time insights" but basic dashboards likely | Basic dashboards shipped, deep analytics in progress |
+| **Evaluation framework** for AI outputs | ML blog describes as active research | Research phase |
+| **Integration depth** (per-customer customization) | ML blog: "each Salesforce instance is unique — the work is in modeling data" | Ongoing per-customer effort |
+
+### What's Aspirational / Roadmap
+
+| Claim | Reality |
+|---|---|
+| **"Deploy agents in 10 minutes"** | Likely refers to OAuth connections + playbook template selection. No demo or documentation shows this anywhere. |
+| **"Playbook marketplace"** | Mentioned once in press release, never again. Requires scale they don't have (~20-30 customers). |
+| **"Fully autonomous agents"** | Nick's own words: "the next two years will be about moving toward" this. Future, not present. |
+| **"Operating system for legal"** | Today they "layer across existing systems." OS replacement is years away. |
+| **Cross-company benchmarking** | Requires 500+ customers with 12+ months of data. |
+
+### The Marketing Gap
+
+**Zero public product screenshots or demos exist** despite being 2+ months post-launch. The blog is 90% thought leadership, 10% product substance. Sequoia's partnership post says almost nothing about the product. Out of 10+ blog posts, only one (Eddy Atkins, Head of ML) contains genuine technical detail.
+
+This is unusual for a product-led company. Every competitor (Ironclad, Harvey, LawVu, GC AI) has public screenshots and/or demo videos. The absence suggests either: (a) the product UI isn't polished enough for public display yet, (b) deliberate stealth while iterating, or (c) the product is more "white-glove implementation" than "self-service platform" at this stage.
+
+### The Origin Story
+
+Nick Fleisher's most revealing quote: **"We started with a Kanban board for lawyers, and quickly expanded to what Sandstone is today."**
+
+The real product DNA is **workflow management with AI layered on top** — not an AI system with workflow layered on top. The core is the intake queue, routing, and dashboard. The AI (classification, redlining, context enrichment) is powerful but supplementary to the workflow foundation.
+
+### Customer Testimonials — Close Reading
+
+| Person | Key Quote | Tense | Assessment |
+|---|---|---|---|
+| **Adam Greenberg** (Crexi GC) | "handling the initial intake and routine redlining so I can focus on strategic decisions" | Present | **Active user.** Most grounded testimonial. |
+| **Katelyn Canning** (Ocrolus Head of Legal) | "it gave our past data a voice in our future negotiations" | Past | **Active user.** References specific integrations working. |
+| **Steve Ucci** (Hypertherm GC) | "Sandstone **will** completely rewire that dynamic" / "I have real-time insights" | Mixed | **Active user** but some features still deploying. |
+| **Enrique Colbert** (Wayfair GC) | "The team **is building** the infrastructure..." | Future | **Advisory endorsement,** not power-user testimonial. |
+
+### Net Assessment
+
+**Sandstone has a real product that real customers use.** Intake → classification → routing → context enrichment → playbook-based redlining → work tracking. This is working and valued.
+
+**But the "AI agent" and "legal operating system" framing significantly outruns the current product.** What exists is closer to "intelligent legal workflow management with AI-assisted triage and drafting" than "autonomous AI agents running your legal department."
+
+The gap between marketing and product isn't unusual for a seed-stage company — but it means:
+1. The "10-minute agent deployment" claim needs verification during diligence
+2. The autonomous agent capabilities are 12-24 months away, not shipped
+3. The product-market fit evidence is for **intake/workflow**, not for **AI agents** per se
+4. The competitive moat today is integrations + context enrichment, not AI autonomy
+
+---
+
+### Q29 Sources
+- [Sandstone Homepage](https://sandstone.com/)
+- [Sandstone Security Page](https://sandstone.com/security)
+- [Sandstone Blog — "We Will Win by Doing the Hard Things" (Eddy Atkins)](https://sandstone.com/blog/we-will-win-by-doing-the-hard-things-why-context-is-the-real-ai-challenge-for-legal-teams)
+- [Sandstone Blog — "The Context-First Legal Department" (Nick Fleisher)](https://sandstone.com/blog/the-context-first-legal-department-cutting-the-ai-noise-and-solving-the-context-tax)
+- [Sandstone Blog — "The Evolution of the AI-Native Legal Department"](https://sandstone.com/blog/the-evolution-of-the-ai-native-legal-department)
+- [Sandstone Press Release — Launch](https://sandstone.com/blog/sandstone-launches-with-usd10m-seed-led-by-sequoia-to-usher-in-the-era-of-ai-native-legal)
+- [Artificial Lawyer — Sandstone Interview](https://www.artificiallawyer.com/2026/01/13/sandstone-raises-10m-seed-led-by-sequoia-for-inhouse-ai-agents/)
+- [Sequoia — Partnering with Sandstone](https://sequoiacap.com/article/partnering-with-sandstone-an-ai-native-platform-for-in-house-legal-teams/)
+- [Bloomberg Law — Sequoia Leads Backing](https://news.bloomberglaw.com/legal-ops-and-tech/sequoia-leads-backing-of-ai-legal-technology-startup-sandstone)
+
+---
+
+## Q30: Fastest-Growing Vertical AI Companies and Speed to $10B
+
+### The Speed Benchmark Has Changed
+
+The prior generation of enterprise SaaS took **7-11 years** to reach $10B. AI-native companies are doing it in **2-4 years** — a 3-5x compression.
+
+| Company | Founded | Time to $10B | Generation |
+|---------|---------|-------------|------------|
+| Salesforce | 1999 | ~10-11 years | SaaS 1.0 |
+| ServiceNow | 2004 | ~10 years | SaaS 1.0 |
+| Workday | 2005 | ~7 years | SaaS 1.0 |
+| **Wiz** | 2020 | **~3 years** | AI-native |
+| **Cursor** | 2022 | **~2-3 years** | AI-native |
+| **Mercor** | Jan 2023 | **~2.5 years** | AI-native |
+| **Sierra** | 2023 | **~2 years** | AI-native |
+| **Harvey** | 2022 | **~3.5 years** | AI-native |
+| Thinking Machines (Mira Murati) | 2024 | <1 year (seed at $10B) | AI-native |
+
+### The Top Vertical AI Companies Right Now
+
+**Tier 1: $10B+ (Category Definers)**
+
+**Harvey (Legal AI) — $11B (Feb 2026, in talks)**
+- Founded summer 2022 by Winston Weinberg (ex-O'Melveny litigator) and Gabriel Pereyra (ex-Google DeepMind)
+- $190M ARR at end of 2025, up from $50M a year earlier (3.9x YoY)
+- Hit $100M ARR in 36 months from founding
+- 1,000+ customers across 60 countries, 50+ of Am Law 100, 8 of top 10 highest-grossing US law firms
+- ~100,000 lawyers on the platform, ~340-500 employees
+- Valuation trajectory: $715M (Dec '23) → $1.5B (Jul '24) → $3B (Feb '25) → $5B (Jun '25) → $8B (Dec '25) → $11B (Feb '26)
+- **$1B to $10B in ~18 months.** Four valuation steps in 12 months.
+- Revenue multiple: ~41x ARR at the $8B mark
+- Total raised: ~$966M confirmed (excluding reported $200M Series G)
+
+**Sierra (Customer Service AI) — $10B (Sep 2025)**
+- Founded 2023 by Bret Taylor (ex-Salesforce co-CEO, ex-OpenAI Board Chair) and Clay Bavor (ex-Google VP)
+- $150M ARR (Jan 2026), up from ~$26M end of 2024 — **5.7x in one year**
+- Hit $100M ARR in under 2 years from founding
+- $1B (Jan '24) → $4.5B (Oct '24) → $10B (Sep '25)
+- **$1B to $10B in ~21 months**
+- Usage/outcome-based pricing (per conversation or per resolution) — not per-seat
+- Total raised: ~$635M
+
+**Cursor (AI Coding) — $29.3B (Nov 2025)**
+- Founded 2022, core product launched 2023
+- **$1.2B ARR in 2025**, up 1,100% YoY. SaaStr: "fastest-growing SaaS company of all time from $1M to $500M ARR"
+- Hit $100M ARR with zero marketing spend — pure viral developer adoption
+- $10B reached in ~2-3 years from launch; $29.3B by November 2025
+- Revenue doubled approximately every two months at peak
+
+**Mercor (AI Recruiting/Training Data) — $10B (Oct 2025)**
+- Founded January 2023 by 21-year-olds
+- ~$450M+ ARR run rate at time of $10B round
+- On track to hit $500M ARR faster than Cursor
+- $10B in ~2.5 years from founding
+
+---
+
+**Tier 2: $5-10B (Category Leaders)**
+
+**Glean (Enterprise Search/Knowledge) — $7.2B (Jun 2025)**
+- Founded 2019. $200M ARR (Dec 2025), doubled in 9 months from $100M
+- $1M+ contract segment grew 3x in a year
+- Self-described "fastest-growing pure-play enterprise software company of the decade"
+- $1B (May '22) → $2.2B (Feb '24) → $4.6B (Sep '24) → $7.2B (Jun '25)
+- $1B to $7B in ~37 months
+
+**Cohere (Enterprise AI/Sovereign AI) — $7B (Sep 2025)**
+- Founded 2019. $240M ARR in 2025, up 287% YoY from $62M
+- IPO imminent — CEO Aidan Gomez said "soon" in Oct 2025
+- $2.2B (Jun '23) → $5.5B (Jul '24) → $7B (Sep '25)
+- Total raised: ~$1.1B
+
+**Abridge (Healthcare AI — Clinical Documentation) — $5.3B (Jun 2025)**
+- Founded 2018. ~$117M contracted ARR (Q1 2025)
+- $60M ARR end of 2024 → $100M+ by May 2025 (67% in 5 months)
+- 150+ health systems deployed. ~$2,500/clinician/year pricing
+- $850M (Feb '24) → $2.75B (Feb '25) → $5.3B (Jun '25) — doubled in 4 months
+- Total raised: ~$800M
+
+---
+
+**Tier 3: $1-5B (Rising Fast)**
+
+| Company | Vertical | Valuation | ARR | Founded | Key Metric |
+|---------|----------|-----------|-----|---------|------------|
+| **Decagon** | Customer Service AI | $4.5B | ~$35M | Aug 2023 | 3.5x ARR in 10 months; tripled valuation in 7 months |
+| **Hippocratic AI** | Healthcare (patient agents) | $3.5B | ~$18M | 2023 | 115M+ patient interactions, 0 safety issues |
+| **EvenUp** | Legal (personal injury) | $2B+ | Undisclosed (2x YoY) | 2019 | 10,000 cases/week, 2,000+ law firms |
+| **Writer** | Enterprise AI | $1.9B | ~$47M | 2020 | 160% NRR, 194% revenue growth |
+| **Ambience** | Healthcare (clinical docs) | $1.25B | ~$30M | ~2020 | Competes with Abridge, ~13% ambient AI market share |
+| **Viz.ai** | Healthcare (radiology) | $1.2B | ~$100M | 2016 | 2,000 US hospitals, more mature |
+
+---
+
+### What's Driving the 3-5x Compression?
+
+**1. Instant product-market fit.** AI products can monetize in months, not years. Cursor had $100M ARR with zero marketing spend. Harvey went from $0 to $10M ARR in its first year.
+
+**2. Shorter enterprise procurement.** AI tools often start as departmental/individual purchases, then expand. Traditional SaaS required 6-12 month enterprise sales cycles from day one.
+
+**3. Unprecedented growth rates.** Cursor: 1,100% YoY. Harvey: 290% YoY. Sierra: 477% YoY. No prior SaaS generation saw these numbers at this scale.
+
+**4. Inflated multiples.** AI companies trade at 24-50x revenue vs. 6-10x for traditional SaaS — a 3-5x premium driven by fear of missing category-defining companies.
+
+| Category | Typical EV/Revenue Multiple |
+|----------|---------------------------|
+| Public SaaS (Salesforce, Workday) | 6-10x |
+| Median private SaaS (2025) | ~6x |
+| AI startups (average) | 24-37x |
+| Top-tier AI infrastructure | 40-50x |
+| Extreme outliers (OpenAI, Anthropic) | 80-100x+ |
+
+**5. Back-to-back funding rounds.** Harvey raised 4 rounds in 12 months. Decagon tripled its valuation in 7 months. The old cadence of one round per 18-24 months is dead for top-tier AI companies.
+
+---
+
+### The $100M ARR Club (Vertical AI)
+
+As of early 2026, the vertical AI companies that have crossed $100M ARR:
+
+| Company | ARR | Time to $100M ARR | Vertical |
+|---------|-----|--------------------|----------|
+| Cursor | $1.2B | ~18 months | Developer tools |
+| Mercor | ~$450M+ | ~24 months | Recruiting/data |
+| Cohere | $240M | ~5 years | Enterprise AI |
+| Glean | $200M | ~4 years (from commercial launch) | Enterprise search |
+| Harvey | $190M | ~36 months | Legal AI |
+| Sierra | $150M | ~22 months | Customer service |
+| Abridge | $117M | ~5 years | Healthcare |
+| Viz.ai | ~$100M | ~6 years | Healthcare |
+
+---
+
+### What This Means for Sandstone
+
+**The good news:** Harvey proves that legal vertical AI can reach $10B+ in ~3.5 years. The market rewards legal AI specifically — Harvey's 41x revenue multiple is higher than most verticals.
+
+**The challenge:** Harvey got there with $190M ARR growing 290% YoY. At Sandstone's current stage (seed, "couple dozen" customers), the path requires:
+
+| Milestone | Harvey's Timeline | Sandstone's Implied Target |
+|-----------|------------------|---------------------------|
+| $10M ARR | ~18 months post-founding | End of 2027 |
+| $50M ARR | ~30 months | Mid-2028 |
+| $100M ARR | ~36 months | End of 2028 |
+| $200M ARR | ~42 months | Mid-2029 |
+| $10B valuation | ~42 months | Mid-2029 |
+
+**But Sandstone isn't Harvey.** Harvey sells to law firms (Am Law 100, $500/seat/month, thousands of lawyers per firm). Sandstone sells to mid-market in-house teams (5-15 lawyers, $50-80K/year platform deals). The ACV is lower, the sales cycle is different, and the land-and-expand motion is entirely different.
+
+**The Sierra comparison is more instructive.** Sierra reached $10B in ~21 months by selling AI agents to enterprise brands on outcome-based pricing. Sandstone's workflow automation model — where value scales with request volume, not seat count — is closer to Sierra's model than Harvey's.
+
+**The Decagon comparison is the most relevant.** Decagon (customer service AI, founded Aug 2023) hit $4.5B in <30 months with ~$35M ARR. Like Sandstone, Decagon automates workflow (support tickets) rather than augmenting individual knowledge workers. If Sandstone can demonstrate Harvey-like growth in the legal workflow category, the multiples are there.
+
+**Bottom line:** The market will pay $10B+ for a vertical AI company that:
+1. **Owns a category** (not fighting 5 competitors for the same positioning)
+2. **Shows 3-5x annual revenue growth** (the minimum bar for top-tier AI multiples)
+3. **Has >$100M ARR or a credible path to it within 12-18 months** (the threshold for $10B at 40-50x)
+4. **Demonstrates NRR above 130%** (proving expansion, not just new logos)
+
+Sandstone's window is ~3-4 years from now. Harvey took 3.5 years. The question isn't whether the market will pay — it's whether Sandstone can grow fast enough to earn it.
+
+---
+
+### Q30 Sources
+- [TechCrunch — Harvey Reportedly Raising at $11B](https://techcrunch.com/2026/02/09/harvey-reportedly-raising-at-11b-valuation-just-months-after-it-hit-8b/)
+- [TechCrunch — Harvey Confirms $8B Valuation](https://techcrunch.com/2025/12/04/legal-ai-startup-harvey-confirms-8b-valuation/)
+- [Sacra — Harvey at $195M ARR](https://sacra.com/research/harvey-at-195m-arr/)
+- [Artificial Lawyer — Harvey Reaches $100M ARR](https://www.artificiallawyer.com/2025/08/04/harvey-reaches-100m-arr-42-of-amlaw-100/)
+- [TechCrunch — Sierra Raises $350M at $10B](https://techcrunch.com/2025/09/04/bret-taylors-sierra-raises-350m-at-a-10b-valuation/)
+- [TechCrunch — Sierra Reaches $100M ARR](https://techcrunch.com/2025/11/21/bret-taylors-sierra-reaches-100m-arr-in-under-two-years/)
+- [TechCrunch — Cursor at $10B](https://techcrunch.com/2025/03/07/cursor-in-talks-to-raise-at-a-10b-valuation-as-ai-coding-sector-booms/)
+- [SaaStr — Cursor $1B ARR in 17 Months](https://www.saastr.com/cursor-hit-1b-arr-in-17-months-the-fastest-b2b-to-scale-ever-and-its-not-even-close/)
+- [CNBC — Cursor $29.3B](https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html)
+- [TechCrunch — Mercor $10B](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/)
+- [Glean Series F Announcement](https://www.glean.com/blog/glean-series-f-announcement)
+- [Fortune — Glean Hits $200M ARR](https://fortune.com/2025/12/08/exclusive-glean-hits-200-million-arr-up-from-100-million-nine-months-back/)
+- [TechCrunch — Abridge Doubles to $5.3B](https://techcrunch.com/2025/06/24/in-just-4-months-ai-medical-scribe-abridge-doubles-valuation-to-5-3b/)
+- [Bloomberg — Decagon $4.5B](https://www.bloomberg.com/news/articles/2026-01-28/ai-customer-support-startup-decagon-valued-at-4-5-billion)
+- [Fortune — EvenUp $2B](https://fortune.com/2025/10/07/exclusive-evenup-raises-150-million-series-e-at-2-billion-valuation-as-ai-reshapes-personal-injury-law/)
+- [Cohere $500M Raise](https://cohere.com/blog/august-2025-funding-round)
+- [CNBC — Cohere IPO Revenue](https://www.cnbc.com/2026/02/13/ai-startup-cohere-revenue-ipo.html)
+- [Fortune — AI Startup Valuations Doubling and Tripling](https://fortune.com/2025/11/29/ai-startup-valuations-are-doubling-and-tripling-within-months-as-back-to-back-funding-rounds-fuel-a-stunning-growth-spurt/)
+- [Aventis Advisors — AI Valuation Multiples](https://aventis-advisors.com/ai-valuation-multiples/)
+- [Wiz $10B Valuation — TechCrunch](https://techcrunch.com/2023/02/27/cloud-security-startup-wiz-now-valued-at-10b-raises-300m/)
+
+---
